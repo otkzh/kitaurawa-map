@@ -148,6 +148,30 @@ label {
   font-size: 14px;
 }
 
+.category-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #fff;
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .12);
+}
+
+.food-icon { background: var(--food); }
+.shop-icon { background: var(--shop); }
+.medical-icon { background: var(--medical); }
+.public-icon { background: var(--public); }
+.care-icon { background: var(--care); }
+.park-icon { background: var(--park); }
+.safe-icon { background: var(--safe); }
+.mobility-icon { background: var(--mobility); }
+.other-icon { background: var(--other); }
+
 input[type="checkbox"] {
   width: 16px;
   height: 16px;

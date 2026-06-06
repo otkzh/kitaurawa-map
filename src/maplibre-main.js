@@ -63,7 +63,9 @@ const map = new maplibregl.Map({
   container: 'map',
   center: CONFIG.center,
   zoom: CONFIG.zoom,
-  style: BASEMAPS.openfreemap.style
+  style: BASEMAPS.openfreemap.style,
+  crossSourceCollisions: false,
+  localIdeographFontFamily: 'sans-serif'
 });
 window.kitaurawaMap = map;
 
@@ -111,6 +113,7 @@ map.on('load', () => {
 function rasterStyle(id, tiles, attribution) {
   return {
     version: 8,
+    glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
     sources: {
       [id]: {
         type: 'raster',
@@ -206,26 +209,53 @@ function addMapSourcesAndLayers() {
       }
     });
   }
-  if (!map.getLayer('poi-labels')) {
-    map.addLayer({
-      id: 'poi-labels',
-      type: 'symbol',
-      source: 'pois',
-      minzoom: 16,
-      layout: {
-        'text-field': ['get', 'name'],
-        'text-size': 11,
-        'text-offset': [0.8, 0],
-        'text-anchor': 'left',
-        'text-optional': true
-      },
-      paint: {
-        'text-color': '#172033',
-        'text-halo-color': '#ffffff',
-        'text-halo-width': 1.5
-      }
-    });
-  }
+  ensurePoiLabelLayer();
+  movePoiLayersToTop();
+}
+
+function ensurePoiLabelLayer() {
+  if (map.getLayer('poi-labels')) return;
+  map.addLayer({
+    id: 'poi-labels',
+    type: 'symbol',
+    source: 'pois',
+    minzoom: 14.5,
+    filter: ['has', 'name'],
+    layout: {
+      'text-field': ['get', 'name'],
+      'text-size': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        14.5, 10,
+        16, 11,
+        18, 13
+      ],
+      'text-variable-anchor': ['top', 'bottom', 'left', 'right', 'top-left', 'top-right', 'bottom-left', 'bottom-right'],
+      'text-radial-offset': 1.05,
+      'text-justify': 'auto',
+      'text-max-width': 9,
+      'text-padding': 2,
+      'text-optional': false,
+      'text-allow-overlap': false,
+      'text-ignore-placement': false,
+      'symbol-sort-key': ['get', 'labelPriority']
+    },
+    paint: {
+      'text-color': '#172033',
+      'text-halo-color': '#ffffff',
+      'text-halo-width': 1.75,
+      'text-halo-blur': 0.25
+    }
+  });
+}
+
+function movePoiLayersToTop() {
+  ['bounds-line', 'poi-casing', 'poi-points', 'poi-labels'].forEach(layerId => {
+    if (map.getLayer(layerId)) {
+      map.moveLayer(layerId);
+    }
+  });
 }
 
 function bindMapHandlers() {
@@ -435,13 +465,21 @@ function featureToGeoJson(feature) {
       color: COLORS[feature.category] || COLORS.other,
       after: feature.isAfter,
       selected: selectedFeatureId === feature.id,
-      themeVisible: state.layers.theme && feature.themeTags.length > 0
+      themeVisible: state.layers.theme && feature.themeTags.length > 0,
+      labelPriority: getLabelPriority(feature)
     },
     geometry: {
       type: 'Point',
       coordinates: [feature.lon, feature.lat]
     }
   };
+}
+
+function getLabelPriority(feature) {
+  if (selectedFeatureId === feature.id) return 0;
+  if (feature.isAfter) return 1;
+  if (feature.themeTags.length > 0) return 2;
+  return 3;
 }
 
 function emptyFeatureCollection() {
