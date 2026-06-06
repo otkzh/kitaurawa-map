@@ -41,7 +41,7 @@ const THEME_TAGS = [
   'wheelchair=limited', 'toilets:wheelchair=yes'
 ];
 
-const map = L.map('map').setView(CONFIG.center, CONFIG.zoom);
+const map = L.map('map', { preferCanvas: true }).setView(CONFIG.center, CONFIG.zoom);
 const baseLayers = {
   'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -67,8 +67,7 @@ L.rectangle(
 
 const layers = {
   before: L.layerGroup().addTo(map),
-  after: L.layerGroup().addTo(map),
-  theme: L.layerGroup().addTo(map)
+  after: L.layerGroup().addTo(map)
 };
 
 const state = {
@@ -88,7 +87,9 @@ const state = {
 };
 
 let beforeFeatures = [];
+let beforeSnapshotFeatures = [];
 let afterFeatures = [];
+let selectedFeatureId = null;
 
 function buildAfterQuery() {
   const b = CONFIG.bounds;
@@ -220,9 +221,6 @@ function render() {
       makeMarker(feature, targetLayer, canPlaceLabel(feature, placedLabels)).addTo(layers[targetLayer]);
       visible++;
     }
-    if (state.layers.theme && feature.themeTags.length > 0) {
-      makeMarker(feature, 'theme', false).addTo(layers.theme);
-    }
   }
 
   updateStats(visible);
@@ -230,17 +228,22 @@ function render() {
 
 function makeMarker(feature, mode, showLabel) {
   const color = COLORS[feature.category] || COLORS.other;
-  const isTheme = mode === 'theme';
+  const isTheme = state.layers.theme && feature.themeTags.length > 0;
+  const isSelected = selectedFeatureId === feature.id;
   const marker = L.circleMarker([feature.lat, feature.lon], {
-    radius: isTheme ? 12 : feature.isAfter ? 10 : feature.themeTags.length ? 8 : 7,
-    color: isTheme ? '#111827' : feature.isAfter ? COLORS.after : color,
+    radius: isSelected ? 11 : feature.isAfter ? 10 : isTheme ? 8 : 7,
+    color: isSelected ? '#111827' : feature.isAfter ? COLORS.after : isTheme ? '#111827' : color,
     fillColor: color,
-    fillOpacity: isTheme ? 0 : mode === 'before' ? .68 : .9,
-    opacity: isTheme ? .72 : .96,
-    weight: isTheme ? 2 : feature.isAfter ? 4 : feature.themeTags.length ? 2 : 1
-  }).bindPopup(buildPopup(feature));
+    fillOpacity: mode === 'before' ? .68 : .9,
+    opacity: .96,
+    weight: isSelected ? 4 : feature.isAfter ? 4 : isTheme ? 2 : 1
+  });
 
-  marker.on('mouseover', () => marker.openPopup());
+  marker.on('click', () => {
+    selectedFeatureId = feature.id;
+    showDetails(feature);
+    render();
+  });
 
   if (showLabel && feature.tags.name) {
     marker.bindTooltip(escapeHtml(feature.tags.name), {
@@ -253,7 +256,22 @@ function makeMarker(feature, mode, showLabel) {
   return marker;
 }
 
-function buildPopup(feature) {
+function showDetails(feature) {
+  const title = document.getElementById('detailTitle');
+  const summary = document.getElementById('detailSummary');
+  const content = document.getElementById('detailContent');
+  if (!title || !summary || !content) return;
+
+  const tags = feature.tags;
+  const name = tags.name || '名称なし';
+  const type = tags.amenity || tags.shop || tags.leisure || tags.emergency || tags.highway || tags.railway || tags.public_transport || '地点';
+  title.textContent = name;
+  summary.textContent = `${getCategoryLabel(feature.category)} / ${type}`;
+  content.className = '';
+  content.innerHTML = buildDetailHtml(feature);
+}
+
+function buildDetailHtml(feature) {
   const tags = feature.tags;
   const name = tags.name || '名称なし';
   const type = tags.amenity || tags.shop || tags.leisure || tags.emergency || tags.highway || tags.railway || tags.public_transport || '地点';
@@ -266,7 +284,7 @@ function buildPopup(feature) {
     <div class="popup-title">${escapeHtml(name)}</div>
     <div>${escapeHtml(type)}</div>
     <div class="tag-list">${stateHtml}${themeHtml}</div>
-    ${rows ? `<dl class="popup-meta">${rows}</dl>` : ''}
+    ${rows ? `<dl class="detail-meta">${rows}</dl>` : ''}
     <p style="margin:10px 0 0;font-size:12px;"><a href="${osmUrl}" target="_blank" rel="noopener">OSMで開く</a></p>
   `;
 }
@@ -277,7 +295,7 @@ function buildInfoRows(feature) {
   const push = (label, value, formatter) => {
     if (!value) return;
     const formatted = formatter ? formatter(value) : escapeHtml(value);
-    rows.push(`<div class="popup-row"><dt>${label}</dt><dd>${formatted}</dd></div>`);
+    rows.push(`<div class="detail-row"><dt>${label}</dt><dd>${formatted}</dd></div>`);
   };
   push('カテゴリ', getCategoryLabel(feature.category));
   push('分類タグ', t.amenity || t.shop || t.leisure || t.emergency || t.highway || t.railway || t.public_transport);
@@ -348,33 +366,45 @@ function setStatus(text) {
   document.getElementById('statusText').textContent = text;
 }
 
-async function loadData() {
+async function loadAfterData() {
   const button = document.getElementById('reloadButton');
   button.disabled = true;
-  button.textContent = '読み込み中...';
-  setStatus('Before JSONとAfterデータを読み込んでいます。');
+  button.textContent = 'After取得中...';
+  setStatus('OpenStreetMapからAfterデータを取得しています。');
   try {
-    const beforeJson = await loadBeforeSnapshot();
     const afterJson = await postOverpass(buildAfterQuery()).catch(error => {
       console.warn(error);
-      setStatus('Beforeは表示中。AfterのOverpass取得に失敗しました。');
-      return { elements: [] };
+      throw new Error('AfterのOverpass取得に失敗しました。Beforeはそのまま表示しています。');
     });
     const afterIds = new Set((afterJson.elements || []).map(el => `${el.type}/${el.id}`));
-    beforeFeatures = dedupeFeatures((beforeJson.elements || [])
-      .filter(el => !afterIds.has(`${el.type}/${el.id}`))
-      .map(el => elementToFeature(el, 'before')));
+    beforeFeatures = beforeSnapshotFeatures.filter(feature => !afterIds.has(feature.id));
     afterFeatures = dedupeFeatures((afterJson.elements || []).map(el => elementToFeature(el, 'after')));
     render();
-    setStatus(`Before ${beforeFeatures.length}件、After ${afterFeatures.length}件を表示できます。`);
-    button.textContent = 'データを再読み込み';
+    setStatus(`Before ${beforeFeatures.length}件、After ${afterFeatures.length}件を表示しています。`);
+    button.textContent = 'Afterを再取得';
   } catch (error) {
     console.error(error);
     setStatus(error.message);
-    alert(`データの読み込みに失敗しました。\n${error.message}`);
-    button.textContent = 'データを読み込む';
+    alert(error.message);
+    button.textContent = afterFeatures.length ? 'Afterを再取得' : 'Afterを取得';
   } finally {
     button.disabled = false;
+  }
+}
+
+async function loadBeforeData() {
+  setStatus('保存済みBeforeデータを読み込んでいます。');
+  try {
+    const beforeJson = await loadBeforeSnapshot();
+    beforeSnapshotFeatures = dedupeFeatures((beforeJson.elements || []).map(el => elementToFeature(el, 'before')));
+    beforeFeatures = beforeSnapshotFeatures;
+    afterFeatures = [];
+    render();
+    setStatus(`Before ${beforeFeatures.length}件を表示しています。Afterは未取得です。`);
+  } catch (error) {
+    console.error(error);
+    setStatus(error.message);
+    alert(`Beforeデータの読み込みに失敗しました。\n${error.message}`);
   }
 }
 
@@ -437,9 +467,9 @@ function bindControls() {
     state.dateFilter.showNoDate = showNoDate.checked;
     render();
   });
-  document.getElementById('reloadButton').addEventListener('click', loadData);
+  document.getElementById('reloadButton').addEventListener('click', loadAfterData);
   map.on('zoomend moveend', render);
 }
 
 bindControls();
-loadData();
+loadBeforeData();

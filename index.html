@@ -15,12 +15,9 @@
       <header class="app-header">
         <p class="eyebrow">2026/6/7 成果発表用</p>
         <h1>北浦和西口<br>まちの居場所マップ</h1>
-        <p class="subtitle">保存済みのBeforeデータと、OpenStreetMapから取得するAfterデータで、生活に関わる施設をカテゴリ別に比較します。</p>
+        <p class="subtitle">最初は保存済みのBeforeデータだけを表示します。必要なときだけOpenStreetMapからAfterデータを取得します。</p>
       </header>
 
-      <div class="action-row">
-        <button id="reloadButton" type="button">データを読み込む</button>
-      </div>
       <p id="statusText" class="status">起動中...</p>
 
       <section class="section">
@@ -84,9 +81,24 @@
         <strong>イベント判定</strong><br>
         <code>survey:date=2026-06-07</code> または <code>note</code> に <code>北浦和居場所マッピングパーティー</code> を含む地点をAfterとして表示します。
       </section>
+
+      <section class="section sync-section">
+        <h2>Afterデータ</h2>
+        <p class="note">発表中に最新の成果を確認するときだけ、OpenStreetMapへ問い合わせます。</p>
+        <button id="reloadButton" class="secondary-button" type="button">Afterを取得</button>
+      </section>
     </aside>
 
     <main id="map" aria-label="北浦和西口周辺の地図"></main>
+
+    <aside class="detail-panel" aria-live="polite">
+      <header>
+        <p class="eyebrow">詳細</p>
+        <h2 id="detailTitle">地点を選択</h2>
+        <p id="detailSummary" class="detail-summary">地図上のポイントをクリックすると、ここに詳しい情報を表示します。</p>
+      </header>
+      <div id="detailContent" class="detail-empty">未選択</div>
+    </aside>
   </div>
 </body>
 </html>

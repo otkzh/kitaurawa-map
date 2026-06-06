@@ -7,7 +7,8 @@ Leafletで地図を表示し、OpenStreetMap / Overpass APIから取得した生
 ## 方針
 
 - Beforeは、現時点でOverpass APIから取得して保存した `data/before-osm.json` を参照します。
-- Afterは、イベント当日のOSMタグをOverpass APIから取得します。
+- 初期表示ではBefore JSONだけを読み込み、Overpass APIにはアクセスしません。
+- Afterは、画面下部の「Afterを取得」ボタンを押したときだけOverpass APIから取得します。
 - After判定は `survey:date=2026-06-07` または `note=北浦和居場所マッピングパーティー` を含む地点です。
 - ビルド不要の静的Webアプリとして、ローカルHTTPサーバーで動かします。
 
@@ -62,6 +63,12 @@ curl -L --max-time 120 -o data/before-osm.json --data-urlencode data@scripts/bef
 - トイレ・AED・安心設備
 - 交通・バリアフリー
 
+## 操作と軽量化
+
+- 地点をクリックすると、右カラムに詳細を表示します。
+- 地図上のポップアップは使わず、詳細表示を右カラムに固定しています。
+- LeafletはCanvas描画を優先し、注目タグ強調も重複マーカーを使わず単一マーカーの線で表現します。
+
 ## 注意
 
-地図タイル、Leaflet CDN、After取得用Overpass APIにはインターネット接続が必要です。Beforeデータだけであれば、`data/before-osm.json` が存在する限り固定スナップショットを表示できます。
+地図タイルとLeaflet CDNにはインターネット接続が必要です。After取得用Overpass APIへのアクセスは、画面下部の「Afterを取得」ボタンを押した後だけ発生します。
