@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>北浦和西口 まちの居場所マップ MapLibre版</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="src/styles.css">
+  <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+  <script src="src/maplibre-main.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <aside class="panel">
+      <header class="app-header">
+        <p class="eyebrow">MapLibre版 / 2026/6/7 成果発表用</p>
+        <h1>北浦和西口<br>まちの居場所マップ</h1>
+        <p class="subtitle">共通のBefore JSONをMapLibre GL JSで表示します。Afterデータは必要なときだけ取得します。</p>
+      </header>
+
+      <p id="statusText" class="status">起動中...</p>
+
+      <section class="section">
+        <h2>表示</h2>
+        <label><input type="checkbox" data-layer="before" checked> Before: 保存済みOSM</label>
+        <label><input type="checkbox" data-layer="after" checked> After: 当日の成果</label>
+        <label><input type="checkbox" data-layer="theme" checked> 注目タグ強調</label>
+      </section>
+
+      <section class="section">
+        <h2>背景地図</h2>
+        <label><input type="radio" name="basemap" data-basemap="openfreemap" checked> OpenFreeMap ベクター</label>
+        <label><input type="radio" name="basemap" data-basemap="osm"> OpenStreetMap</label>
+        <label><input type="radio" name="basemap" data-basemap="gsi-std"> 地理院地図 標準</label>
+        <label><input type="radio" name="basemap" data-basemap="gsi-photo"> 地理院 航空写真</label>
+      </section>
+
+      <section class="section">
+        <h2>カテゴリ</h2>
+        <label><input type="checkbox" data-category="food" checked> 飲食・休憩</label>
+        <label><input type="checkbox" data-category="shop" checked> 買い物・サービス</label>
+        <label><input type="checkbox" data-category="medical" checked> 医療・薬局</label>
+        <label><input type="checkbox" data-category="public" checked> 公共・金融・郵便</label>
+        <label><input type="checkbox" data-category="care" checked> 子ども・福祉・学び</label>
+        <label><input type="checkbox" data-category="park" checked> 公園・屋外滞在</label>
+        <label><input type="checkbox" data-category="safe" checked> トイレ・AED・安心設備</label>
+        <label><input type="checkbox" data-category="mobility" checked> 交通・バリアフリー</label>
+        <label><input type="checkbox" data-category="other" checked> その他</label>
+      </section>
+
+      <section class="section">
+        <h2>更新年</h2>
+        <div class="date-filter-display"><span id="dateFromLabel">2010</span>年-<span id="dateToLabel">2026</span>年</div>
+        <div class="slider-wrap">
+          <span>以降</span>
+          <input type="range" id="dateFrom" min="2010" max="2026" value="2010">
+        </div>
+        <div class="slider-wrap">
+          <span>以前</span>
+          <input type="range" id="dateTo" min="2010" max="2026" value="2026">
+        </div>
+        <label><input type="checkbox" id="showNoDate" checked> 日付なしを含む</label>
+      </section>
+
+      <section class="section">
+        <h2>集計</h2>
+        <div class="stats">
+          <div class="stat"><b id="beforeCount">0</b><span>Before</span></div>
+          <div class="stat"><b id="afterCount">0</b><span>After</span></div>
+          <div class="stat"><b id="themeCount">0</b><span>注目タグ</span></div>
+          <div class="stat"><b id="visibleCount">0</b><span>表示中</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>凡例</h2>
+        <div class="legend-item"><span class="swatch after"></span>今回追加・更新は赤い外枠</div>
+        <div class="legend-item"><span class="swatch food"></span>飲食・休憩</div>
+        <div class="legend-item"><span class="swatch shop"></span>買い物・サービス</div>
+        <div class="legend-item"><span class="swatch medical"></span>医療・薬局</div>
+        <div class="legend-item"><span class="swatch public"></span>公共・金融・郵便</div>
+        <div class="legend-item"><span class="swatch care"></span>子ども・福祉・学び</div>
+        <div class="legend-item"><span class="swatch park"></span>公園・屋外滞在</div>
+        <div class="legend-item"><span class="swatch safe"></span>安心設備</div>
+        <div class="legend-item"><span class="swatch mobility"></span>交通・バリアフリー</div>
+      </section>
+
+      <section class="section sync-section">
+        <h2>Afterデータ</h2>
+        <p class="note">発表中に最新の成果を確認するときだけ、OpenStreetMapへ問い合わせます。</p>
+        <button id="reloadButton" class="secondary-button" type="button">Afterを取得</button>
+      </section>
+    </aside>
+
+    <main id="map" aria-label="北浦和西口周辺のMapLibre地図"></main>
+
+    <aside class="detail-panel" aria-live="polite">
+      <header>
+        <p class="eyebrow">詳細</p>
+        <h2 id="detailTitle">地点を選択</h2>
+        <p id="detailSummary" class="detail-summary">地図上のポイントをクリックすると、ここに詳しい情報を表示します。</p>
+      </header>
+      <div id="detailContent" class="detail-empty">未選択</div>
+    </aside>
+  </div>
+</body>
+</html>
