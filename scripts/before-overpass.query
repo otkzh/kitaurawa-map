@@ -1,0 +1,18 @@
+[out:json][timeout:25];
+(
+  node["amenity"~"cafe|restaurant|fast_food|bar|pub|community_centre|library|social_facility|childcare|kindergarten|school|clinic|doctors|dentist|hospital|pharmacy|bank|post_office|post_box|police|fire_station|townhall|bench|toilets|drinking_water|bicycle_parking|parking"](35.857,139.625,35.888,139.665);
+  way["amenity"~"cafe|restaurant|fast_food|bar|pub|community_centre|library|social_facility|childcare|kindergarten|school|clinic|doctors|dentist|hospital|pharmacy|bank|post_office|post_box|police|fire_station|townhall|bench|toilets|drinking_water|bicycle_parking|parking"](35.857,139.625,35.888,139.665);
+  node["shop"~"supermarket|convenience|mall|department_store|bakery|greengrocer|butcher|seafood|deli|clothes|shoes|chemist|hairdresser|laundry|books|stationery|electronics|hardware|florist|variety_store|mobile_phone|optician"](35.857,139.625,35.888,139.665);
+  way["shop"~"supermarket|convenience|mall|department_store|bakery|greengrocer|butcher|seafood|deli|clothes|shoes|chemist|hairdresser|laundry|books|stationery|electronics|hardware|florist|variety_store|mobile_phone|optician"](35.857,139.625,35.888,139.665);
+  node["leisure"~"park|playground"](35.857,139.625,35.888,139.665);
+  way["leisure"~"park|playground"](35.857,139.625,35.888,139.665);
+  node["emergency"="defibrillator"](35.857,139.625,35.888,139.665);
+  way["emergency"="defibrillator"](35.857,139.625,35.888,139.665);
+  node["highway"="bus_stop"](35.857,139.625,35.888,139.665);
+  way["highway"="bus_stop"](35.857,139.625,35.888,139.665);
+  node["railway"~"station|halt|tram_stop"](35.857,139.625,35.888,139.665);
+  way["railway"~"station|halt|tram_stop"](35.857,139.625,35.888,139.665);
+  node["public_transport"~"station|stop_position|platform"](35.857,139.625,35.888,139.665);
+  way["public_transport"~"station|platform"](35.857,139.625,35.888,139.665);
+);
+out center tags meta;
