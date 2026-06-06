@@ -31,6 +31,14 @@ python3 -m http.server 8000
 http://localhost:8000/
 ```
 
+MapLibre版は以下を開きます。Before JSONなどのデータはLeaflet版と共通です。
+
+```text
+http://localhost:8000/maplibre.html
+```
+
+MapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。
+
 ## Beforeデータの更新
 
 Beforeスナップショットを取り直す場合は、以下のクエリをOverpass APIにPOSTし、結果を `data/before-osm.json` に保存します。
@@ -46,8 +54,10 @@ curl -L --max-time 120 -o data/before-osm.json --data-urlencode data@scripts/bef
 ## ファイル構成
 
 - `index.html`: アプリ本体のHTML
+- `maplibre.html`: MapLibre版アプリのHTML
 - `src/styles.css`: 画面スタイル
 - `src/main.js`: Leaflet描画、フィルター、Overpass取得処理
+- `src/maplibre-main.js`: MapLibre描画、フィルター、Overpass取得処理
 - `data/before-osm.json`: Beforeとして使う保存済みOSM JSON
 - `scripts/before-overpass.query`: Before取得用Overpass QL
 - `SPEC.md`: 仕様書
