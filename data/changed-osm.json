@@ -1,0 +1,9784 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.7 375dc00a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-07T06:53:09Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1106094145,
+  "lat": 35.8807495,
+  "lon": 139.6429979,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 6,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "tags": {
+    "highway": "traffic_signals",
+    "name": "針ヶ谷小学校入口"
+  }
+},
+{
+  "type": "node",
+  "id": 1683196770,
+  "lat": 35.8570174,
+  "lon": 139.6470887,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 7325685803,
+  "lat": 35.8721869,
+  "lon": 139.6380611,
+  "timestamp": "2026-06-07T06:31:19Z",
+  "version": 3,
+  "changeset": 183765129,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "amenity": "cafe",
+    "cuisine": "coffee_shop;dessert",
+    "name": "マーブルテラス",
+    "opening_hours": "We-Su 11:00-17:00",
+    "opening_hours:covid19": "Tu-Su 10:00-15:00",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7404605602,
+  "lat": 35.8715363,
+  "lon": 139.6409776,
+  "timestamp": "2026-06-07T06:26:31Z",
+  "version": 2,
+  "changeset": 183764994,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "レストラントミー",
+    "opening_hours": "11:45-14:15,18:00-22:00"
+  }
+},
+{
+  "type": "node",
+  "id": 7404605612,
+  "lat": 35.8715879,
+  "lon": 139.6417098,
+  "timestamp": "2026-06-07T05:42:43Z",
+  "version": 2,
+  "changeset": 183764128,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "craft": "confectionery",
+    "name": "月見屋",
+    "opening_hours": "09:00-18:00",
+    "phone": "+81 48 834 4876"
+  }
+},
+{
+  "type": "node",
+  "id": 7404605614,
+  "lat": 35.8715956,
+  "lon": 139.6418231,
+  "timestamp": "2026-06-07T06:03:41Z",
+  "version": 2,
+  "changeset": 183764508,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "name": "BEAUTYONE",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "payment:credit_cards": "yes",
+    "phone": "+81 48 700 3333",
+    "shop": "beauty"
+  }
+},
+{
+  "type": "node",
+  "id": 7404605628,
+  "lat": 35.8717620,
+  "lon": 139.6424235,
+  "timestamp": "2026-06-07T05:36:51Z",
+  "version": 2,
+  "changeset": 183764035,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "name": "chillo",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 7404605639,
+  "lat": 35.8716330,
+  "lon": 139.6428927,
+  "timestamp": "2026-06-07T05:25:58Z",
+  "version": 2,
+  "changeset": 183763836,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "amenity": "pharmacy",
+    "drive_through": "no",
+    "healthcare": "pharmacy",
+    "name": "そうごう薬局",
+    "phone": "+81 48 832 4861"
+  }
+},
+{
+  "type": "node",
+  "id": 7404605645,
+  "lat": 35.8717933,
+  "lon": 139.6430764,
+  "timestamp": "2026-06-07T05:32:19Z",
+  "version": 2,
+  "changeset": 183763946,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "name": "ulQua北浦和",
+    "phone": "+81 48 799 2772",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 8997430854,
+  "lat": 35.8828371,
+  "lon": 139.6416034,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 8997430855,
+  "lat": 35.8828843,
+  "lon": 139.6416646,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 8997430856,
+  "lat": 35.8829317,
+  "lon": 139.6416281,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 8997430857,
+  "lat": 35.8829045,
+  "lon": 139.6415516,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13143983969,
+  "lat": 35.8805790,
+  "lon": 139.6430128,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13143983973,
+  "lat": 35.8806248,
+  "lon": 139.6431520,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13532752258,
+  "lat": 35.8751921,
+  "lon": 139.6460643,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13532752259,
+  "lat": 35.8750396,
+  "lon": 139.6461423,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13532752260,
+  "lat": 35.8749988,
+  "lon": 139.6460210,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13532752261,
+  "lat": 35.8751513,
+  "lon": 139.6459430,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365561,
+  "lat": 35.8652913,
+  "lon": 139.6507702,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365562,
+  "lat": 35.8653110,
+  "lon": 139.6508649,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365563,
+  "lat": 35.8652674,
+  "lon": 139.6508788,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365564,
+  "lat": 35.8652476,
+  "lon": 139.6507840,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365565,
+  "lat": 35.8653191,
+  "lon": 139.6508827,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365566,
+  "lat": 35.8653505,
+  "lon": 139.6510400,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365567,
+  "lat": 35.8653015,
+  "lon": 139.6510549,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365568,
+  "lat": 35.8652701,
+  "lon": 139.6508976,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365569,
+  "lat": 35.8652667,
+  "lon": 139.6508834,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365570,
+  "lat": 35.8651964,
+  "lon": 139.6509027,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365571,
+  "lat": 35.8652177,
+  "lon": 139.6510422,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365572,
+  "lat": 35.8652603,
+  "lon": 139.6510370,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365573,
+  "lat": 35.8653077,
+  "lon": 139.6509626,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "tags": {
+    "name": "バイクショップフジクラ",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 13915365574,
+  "lat": 35.8658177,
+  "lon": 139.6505925,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365575,
+  "lat": 35.8659452,
+  "lon": 139.6511430,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 13915365576,
+  "lat": 35.8660493,
+  "lon": 139.6514316,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365577,
+  "lat": 35.8660063,
+  "lon": 139.6513093,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365578,
+  "lat": 35.8659858,
+  "lon": 139.6513203,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365579,
+  "lat": 35.8659811,
+  "lon": 139.6513071,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365580,
+  "lat": 35.8659447,
+  "lon": 139.6513266,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365581,
+  "lat": 35.8659768,
+  "lon": 139.6514177,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365582,
+  "lat": 35.8659832,
+  "lon": 139.6514143,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365583,
+  "lat": 35.8659988,
+  "lon": 139.6514587,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365584,
+  "lat": 35.8829152,
+  "lon": 139.6415955,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365585,
+  "lat": 35.8829234,
+  "lon": 139.6415892,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365586,
+  "lat": 35.8828652,
+  "lon": 139.6416269,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915365587,
+  "lat": 35.8828535,
+  "lon": 139.6416359,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923
+},
+{
+  "type": "node",
+  "id": 13915795384,
+  "lat": 35.8717132,
+  "lon": 139.6420159,
+  "timestamp": "2026-06-07T05:12:14Z",
+  "version": 1,
+  "changeset": 183763629,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "payment:cash": "yes",
+    "payment:contactless": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13915795385,
+  "lat": 35.8716856,
+  "lon": 139.6416406,
+  "timestamp": "2026-06-07T05:12:14Z",
+  "version": 1,
+  "changeset": 183763629,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "alt_name:en": "Kirin Beer",
+    "amenity": "vending_machine",
+    "brand": "キリンビール",
+    "brand:en": "Kirin Brewery",
+    "brand:ja": "キリンビール",
+    "brand:wikidata": "Q13403399",
+    "drink:brewery": "yes",
+    "name": "キリンビール",
+    "name:en": "Kirin Brewery",
+    "name:ja": "キリンビール",
+    "official_name": "麒麟麦酒",
+    "payment:cash": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915795386,
+  "lat": 35.8713923,
+  "lon": 139.6408659,
+  "timestamp": "2026-06-07T05:12:14Z",
+  "version": 1,
+  "changeset": 183763629,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "alt_name:en": "Kirin Beer",
+    "amenity": "vending_machine",
+    "brand": "キリンビール",
+    "brand:en": "Kirin Brewery",
+    "brand:ja": "キリンビール",
+    "brand:wikidata": "Q13403399",
+    "drink:brewery": "yes",
+    "name": "キリンビール",
+    "name:en": "Kirin Brewery",
+    "name:ja": "キリンビール",
+    "official_name": "麒麟麦酒",
+    "payment:cash": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915795387,
+  "lat": 35.8715039,
+  "lon": 139.6393619,
+  "timestamp": "2026-06-07T05:12:14Z",
+  "version": 1,
+  "changeset": 183763629,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "alt_name:en": "Asahi Beer",
+    "amenity": "vending_machine",
+    "brand": "アサヒビール",
+    "brand:en": "Asahi Breweries",
+    "brand:ja": "アサヒビール",
+    "brand:wikidata": "Q720479",
+    "drink:brewery": "yes",
+    "name": "アサヒビール",
+    "name:en": "Asahi Breweries",
+    "name:ja": "アサヒビール",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "short_name:en": "Asahi",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915795388,
+  "lat": 35.8715190,
+  "lon": 139.6393614,
+  "timestamp": "2026-06-07T05:12:14Z",
+  "version": 1,
+  "changeset": 183763629,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "brand": "サントリー",
+    "brand:en": "Suntory",
+    "brand:ja": "サントリー",
+    "brand:wikidata": "Q1345267",
+    "name": "サントリー",
+    "name:en": "Suntory",
+    "name:ja": "サントリー",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915795389,
+  "lat": 35.8715394,
+  "lon": 139.6408715,
+  "timestamp": "2026-06-07T05:27:50Z",
+  "version": 1,
+  "changeset": 183763873,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "name": "Ohana Bagel",
+    "opening_hours": "We-Th 11:00-",
+    "shop": "bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 13915795390,
+  "lat": 35.8715788,
+  "lon": 139.6414781,
+  "timestamp": "2026-06-07T05:27:50Z",
+  "version": 1,
+  "changeset": 183763873,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "name": "無人古着屋 Cool Cat",
+    "opening_hours": "Mo-Su 06:00-25:00",
+    "payment:alipay": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "second_hand": "only",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804562,
+  "lat": 35.8719562,
+  "lon": 139.6448097,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "一心"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804563,
+  "lat": 35.8719423,
+  "lon": 139.6448397,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "和和"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804564,
+  "lat": 35.8717848,
+  "lon": 139.6448156,
+  "timestamp": "2026-06-07T05:51:21Z",
+  "version": 2,
+  "changeset": 183764272,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "cafe",
+    "name": "珈琲亭"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804565,
+  "lat": 35.8717684,
+  "lon": 139.6447030,
+  "timestamp": "2026-06-07T06:00:13Z",
+  "version": 2,
+  "changeset": 183764436,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "name": "煙草屋KOBAYASHI",
+    "shop": "tobacco"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804566,
+  "lat": 35.8717319,
+  "lon": 139.6443054,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "bar",
+    "name": "BEER HUNTING URAWA"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804567,
+  "lat": 35.8717615,
+  "lon": 139.6423592,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "sushi",
+    "name": "八角堂"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804568,
+  "lat": 35.8708476,
+  "lon": 139.6447045,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819
+},
+{
+  "type": "node",
+  "id": 13915804569,
+  "lat": 35.8708475,
+  "lon": 139.6447215,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "bar",
+    "name": "PARK SIDE STAND"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804570,
+  "lat": 35.8717049,
+  "lon": 139.6415947,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "name": "RE:BODY整体",
+    "shop": "massage"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804571,
+  "lat": 35.8714474,
+  "lon": 139.6416968,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "チキンハウスぶれえめん"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804572,
+  "lat": 35.8714495,
+  "lon": 139.6416885,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "No food, No life"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804573,
+  "lat": 35.8714437,
+  "lon": 139.6416285,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "pub",
+    "name": "豊島坊"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804574,
+  "lat": 35.8715743,
+  "lon": 139.6416021,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "北浦和イッカイ"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804575,
+  "lat": 35.8710576,
+  "lon": 139.6423359,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 1,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "tags": {
+    "amenity": "childcare",
+    "name": "民間学童保育ガクモン"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804803,
+  "lat": 35.8703121,
+  "lon": 139.6428105,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804804,
+  "lat": 35.8694989,
+  "lon": 139.6444349,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804805,
+  "lat": 35.8693483,
+  "lon": 139.6437983,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804806,
+  "lat": 35.8702803,
+  "lon": 139.6436712,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804807,
+  "lat": 35.8694832,
+  "lon": 139.6442462,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804808,
+  "lat": 35.8702992,
+  "lon": 139.6435399,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804809,
+  "lat": 35.8699834,
+  "lon": 139.6440875,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804810,
+  "lat": 35.8707035,
+  "lon": 139.6437185,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804811,
+  "lat": 35.8702146,
+  "lon": 139.6436809,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804812,
+  "lat": 35.8704066,
+  "lon": 139.6436665,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804813,
+  "lat": 35.8712157,
+  "lon": 139.6467374,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "smoking_area"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804814,
+  "lat": 35.8693906,
+  "lon": 139.6438908,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804815,
+  "lat": 35.8706149,
+  "lon": 139.6436426,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804816,
+  "lat": 35.8695060,
+  "lon": 139.6445503,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804817,
+  "lat": 35.8700996,
+  "lon": 139.6433889,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804818,
+  "lat": 35.8703587,
+  "lon": 139.6435025,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088
+},
+{
+  "type": "node",
+  "id": 13915804819,
+  "lat": 35.8700383,
+  "lon": 139.6425432,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804820,
+  "lat": 35.8712727,
+  "lon": 139.6462774,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "name": "アンズトモモ北浦和",
+    "shop": "pastry"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804821,
+  "lat": 35.8703548,
+  "lon": 139.6428052,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804822,
+  "lat": 35.8696940,
+  "lon": 139.6446642,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804823,
+  "lat": 35.8693806,
+  "lon": 139.6438601,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804824,
+  "lat": 35.8706854,
+  "lon": 139.6436275,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804825,
+  "lat": 35.8703562,
+  "lon": 139.6435401,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804826,
+  "lat": 35.8706464,
+  "lon": 139.6429409,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804827,
+  "lat": 35.8700762,
+  "lon": 139.6430637,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804828,
+  "lat": 35.8705251,
+  "lon": 139.6435170,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804829,
+  "lat": 35.8693655,
+  "lon": 139.6438280,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804830,
+  "lat": 35.8705726,
+  "lon": 139.6429824,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804831,
+  "lat": 35.8719664,
+  "lon": 139.6446123,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088
+},
+{
+  "type": "node",
+  "id": 13915804832,
+  "lat": 35.8699283,
+  "lon": 139.6439395,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804833,
+  "lat": 35.8696300,
+  "lon": 139.6446659,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804834,
+  "lat": 35.8704054,
+  "lon": 139.6427962,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804835,
+  "lat": 35.8704949,
+  "lon": 139.6427758,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804836,
+  "lat": 35.8698059,
+  "lon": 139.6435944,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804837,
+  "lat": 35.8698912,
+  "lon": 139.6437990,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804838,
+  "lat": 35.8700968,
+  "lon": 139.6433363,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804839,
+  "lat": 35.8705345,
+  "lon": 139.6435328,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804840,
+  "lat": 35.8700801,
+  "lon": 139.6431326,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804841,
+  "lat": 35.8705732,
+  "lon": 139.6430806,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804842,
+  "lat": 35.8706648,
+  "lon": 139.6433734,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804843,
+  "lat": 35.8719184,
+  "lon": 139.6453742,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804844,
+  "lat": 35.8694889,
+  "lon": 139.6443161,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804845,
+  "lat": 35.8700317,
+  "lon": 139.6441936,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804846,
+  "lat": 35.8699646,
+  "lon": 139.6440356,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804847,
+  "lat": 35.8703436,
+  "lon": 139.6436642,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804848,
+  "lat": 35.8694948,
+  "lon": 139.6443773,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804849,
+  "lat": 35.8700061,
+  "lon": 139.6441419,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804850,
+  "lat": 35.8705502,
+  "lon": 139.6436477,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804851,
+  "lat": 35.8701508,
+  "lon": 139.6429623,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804852,
+  "lat": 35.8701480,
+  "lon": 139.6430404,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804853,
+  "lat": 35.8699119,
+  "lon": 139.6425394,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "toilets"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804854,
+  "lat": 35.8705416,
+  "lon": 139.6427636,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804855,
+  "lat": 35.8707149,
+  "lon": 139.6440548,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804856,
+  "lat": 35.8717703,
+  "lon": 139.6446766,
+  "timestamp": "2026-06-07T06:00:13Z",
+  "version": 2,
+  "changeset": 183764436,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "smoking_area",
+    "description": "最大喫煙人数2人まで"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804857,
+  "lat": 35.8704870,
+  "lon": 139.6436491,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804858,
+  "lat": 35.8704209,
+  "lon": 139.6435267,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804859,
+  "lat": 35.8717110,
+  "lon": 139.6458203,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804860,
+  "lat": 35.8706478,
+  "lon": 139.6429984,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804861,
+  "lat": 35.8699450,
+  "lon": 139.6439844,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804862,
+  "lat": 35.8715744,
+  "lon": 139.6457466,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804863,
+  "lat": 35.8701530,
+  "lon": 139.6431235,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804864,
+  "lat": 35.8695009,
+  "lon": 139.6444953,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804865,
+  "lat": 35.8717447,
+  "lon": 139.6452747,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804866,
+  "lat": 35.8704486,
+  "lon": 139.6427847,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804867,
+  "lat": 35.8705706,
+  "lon": 139.6430323,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915804868,
+  "lat": 35.8698168,
+  "lon": 139.6446148,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 1,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810677,
+  "lat": 35.8717946,
+  "lon": 139.6447616,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "brand": "コカ・コーラ",
+    "brand:en": "Coca-Cola",
+    "brand:ja": "コカ・コーラ",
+    "brand:wikidata": "Q2813",
+    "drink:cola": "yes",
+    "name": "コカ・コーラ",
+    "name:en": "Coca-Cola",
+    "name:ja": "コカ・コーラ",
+    "payment:cash": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810678,
+  "lat": 35.8717881,
+  "lon": 139.6446636,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "payment:cash": "yes",
+    "vending": "cigarettes"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810679,
+  "lat": 35.8717593,
+  "lon": 139.6442549,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "brand": "サントリー",
+    "brand:en": "Suntory",
+    "brand:ja": "サントリー",
+    "brand:wikidata": "Q1345267",
+    "name": "サントリー",
+    "name:en": "Suntory",
+    "name:ja": "サントリー",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810680,
+  "lat": 35.8715059,
+  "lon": 139.6443414,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "brand": "サントリー",
+    "brand:en": "Suntory",
+    "brand:ja": "サントリー",
+    "brand:wikidata": "Q1345267",
+    "name": "サントリー",
+    "name:en": "Suntory",
+    "name:ja": "サントリー",
+    "payment:cash": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810681,
+  "lat": 35.8714260,
+  "lon": 139.6441665,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "operator": "Orange Ribbon",
+    "payment:cash": "yes",
+    "payment:contactless": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810682,
+  "lat": 35.8711473,
+  "lon": 139.6445004,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "brand": "サントリー",
+    "brand:en": "Suntory",
+    "brand:ja": "サントリー",
+    "brand:wikidata": "Q1345267",
+    "name": "サントリー",
+    "name:en": "Suntory",
+    "name:ja": "サントリー",
+    "payment:cash": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810683,
+  "lat": 35.8713819,
+  "lon": 139.6452653,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "brand": "サントリー",
+    "brand:en": "Suntory",
+    "brand:ja": "サントリー",
+    "brand:wikidata": "Q1345267",
+    "name": "サントリー",
+    "name:en": "Suntory",
+    "name:ja": "サントリー",
+    "payment:cash": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810684,
+  "lat": 35.8710521,
+  "lon": 139.6430645,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810685,
+  "lat": 35.8711081,
+  "lon": 139.6421982,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "brand": "サントリー",
+    "brand:en": "Suntory",
+    "brand:ja": "サントリー",
+    "brand:wikidata": "Q1345267",
+    "name": "サントリー",
+    "name:en": "Suntory",
+    "name:ja": "サントリー",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "vending": "drinks"
+  }
+},
+{
+  "type": "node",
+  "id": 13915810686,
+  "lat": 35.8711288,
+  "lon": 139.6421960,
+  "timestamp": "2026-06-07T05:06:30Z",
+  "version": 1,
+  "changeset": 183763546,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "vending_machine",
+    "payment:cash": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13916540592,
+  "lat": 35.8715967,
+  "lon": 139.6407727,
+  "timestamp": "2026-06-07T06:12:19Z",
+  "version": 2,
+  "changeset": 183764691,
+  "user": "shiroyagi68",
+  "uid": 24092330,
+  "tags": {
+    "colour": "#ff0026",
+    "emergency": "fire_hydrant",
+    "fire_hydrant": "pillar",
+    "fire_hydrant:position": "lane",
+    "fire_hydrant:type": "pillar"
+  }
+},
+{
+  "type": "node",
+  "id": 13916545308,
+  "lat": 35.8717718,
+  "lon": 139.6445796,
+  "timestamp": "2026-06-07T06:02:07Z",
+  "version": 2,
+  "changeset": 183764476,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "branch": "北浦和店",
+    "brand": "トモズ",
+    "brand:en": "Tomod's",
+    "brand:ja": "トモズ",
+    "brand:wikidata": "Q7820097",
+    "level": "0,1",
+    "name": "トモズ",
+    "name:en": "Tomod's",
+    "name:ja": "トモズ",
+    "phone": "048-826-5231",
+    "shop": "chemist"
+  }
+},
+{
+  "type": "node",
+  "id": 13916563377,
+  "lat": 35.8714623,
+  "lon": 139.6393834,
+  "timestamp": "2026-06-07T06:17:03Z",
+  "version": 2,
+  "changeset": 183764779,
+  "user": "shiroyagi68",
+  "uid": 24092330,
+  "tags": {
+    "colour": "#ff0000",
+    "emergency": "fire_hydrant",
+    "fire_hydrant": "pillar",
+    "fire_hydrant:position": "lane",
+    "fire_hydrant:type": "pillar"
+  }
+},
+{
+  "type": "node",
+  "id": 13916565546,
+  "lat": 35.8717031,
+  "lon": 139.6437858,
+  "timestamp": "2026-06-07T05:17:06Z",
+  "version": 1,
+  "changeset": 183763692,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "amenity": "pub",
+    "name": "こんぺいとう",
+    "opening_hours": "11:00-14:00,17:00-23:00",
+    "smoking": "separated"
+  }
+},
+{
+  "type": "node",
+  "id": 13916565610,
+  "lat": 35.8714739,
+  "lon": 139.6438564,
+  "timestamp": "2026-06-07T04:56:59Z",
+  "version": 1,
+  "changeset": 183763390,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "amenity": "pub",
+    "name": "ちょうじ",
+    "opening_hours": "Tu-Su 17:00+",
+    "payment:paypay": "yes",
+    "phone": "+81 48 831 1358"
+  }
+},
+{
+  "type": "node",
+  "id": 13916570663,
+  "lat": 35.8716765,
+  "lon": 139.6438142,
+  "timestamp": "2026-06-07T05:18:49Z",
+  "version": 1,
+  "changeset": 183763721,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "beauty": "nails;eyelash;eyebrow",
+    "name": "BIANCA",
+    "shop": "beauty"
+  }
+},
+{
+  "type": "node",
+  "id": 13916571328,
+  "lat": 35.8714804,
+  "lon": 139.6439673,
+  "timestamp": "2026-06-07T05:05:00Z",
+  "version": 1,
+  "changeset": 183763514,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "amenity": "fast_food",
+    "drive_through": "no",
+    "fast_food": "cafeteria",
+    "name": "Cafe Perico",
+    "opening_hours": "12:00-18:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13916572947,
+  "lat": 35.8708295,
+  "lon": 139.6393335,
+  "timestamp": "2026-06-07T05:12:50Z",
+  "version": 1,
+  "changeset": 183763641,
+  "user": "monyomonyo",
+  "uid": 12398069,
+  "tags": {
+    "craft": "confectionery",
+    "name": "たちばなや",
+    "phone": "048-831-2944"
+  }
+},
+{
+  "type": "node",
+  "id": 13916575991,
+  "lat": 35.8714997,
+  "lon": 139.6418034,
+  "timestamp": "2026-06-07T06:16:25Z",
+  "version": 1,
+  "changeset": 183764764,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "amenity": "pub",
+    "name": "あったらいいな酒場　ご馳屋",
+    "name:en": "Gocha"
+  }
+},
+{
+  "type": "node",
+  "id": 13916575992,
+  "lat": 35.8714707,
+  "lon": 139.6418073,
+  "timestamp": "2026-06-07T06:16:25Z",
+  "version": 1,
+  "changeset": 183764764,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "とんかつ　かつ富"
+  }
+},
+{
+  "type": "node",
+  "id": 13916579494,
+  "lat": 35.8719801,
+  "lon": 139.6450452,
+  "timestamp": "2026-06-07T06:06:09Z",
+  "version": 1,
+  "changeset": 183764566,
+  "user": "hagurenoyugi",
+  "uid": 24193222,
+  "tags": {
+    "addr:city": "浦和区",
+    "addr:postcode": "336-0074",
+    "addr:province": "埼玉県",
+    "branch": "北浦和駅西口店",
+    "brand": "マツモトキヨシ",
+    "brand:en": "Matsumoto Kiyoshi",
+    "brand:ja": "マツモトキヨシ",
+    "brand:wikidata": "Q8014776",
+    "name": "マツモトキヨシ",
+    "name:en": "Matsumoto Kiyoshi",
+    "name:ja": "マツモトキヨシ",
+    "opening_hours": "Mo-Su 10:00-22:00",
+    "phone": "048-814-1105",
+    "shop": "chemist",
+    "short_name": "マツキヨ",
+    "short_name:en": "Matsukiyo",
+    "short_name:ja": "マツキヨ"
+  }
+},
+{
+  "type": "node",
+  "id": 13916593629,
+  "lat": 35.8716965,
+  "lon": 139.6421587,
+  "timestamp": "2026-06-07T06:07:09Z",
+  "version": 1,
+  "changeset": 183764583,
+  "user": "shiroyagi68",
+  "uid": 24092330,
+  "tags": {
+    "colour": "#ff7300",
+    "emergency": "fire_hydrant",
+    "fire_hydrant:position": "lane",
+    "fire_hydrant:type": "pillar"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594403,
+  "lat": 35.8697561,
+  "lon": 139.6435367,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "関根伸夫",
+    "name": "ストンファニチュア",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594404,
+  "lat": 35.8698572,
+  "lon": 139.6427770,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "橋本真之",
+    "name": "果実の中の木もれ陽",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594405,
+  "lat": 35.8707787,
+  "lon": 139.6444525,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "エミリオ•グレコ",
+    "name": "ゆあみ",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594406,
+  "lat": 35.8705676,
+  "lon": 139.6425130,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "黒川紀章",
+    "name": "中銀カプセルタワービル•住宅カプセル",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594407,
+  "lat": 35.8698925,
+  "lon": 139.6430699,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "橋本省",
+    "name": "流水の門",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594408,
+  "lat": 35.8698258,
+  "lon": 139.6432032,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "柳原義達",
+    "name": "道標鳩",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594409,
+  "lat": 35.8698030,
+  "lon": 139.6428137,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "重村三雄",
+    "name": "風景の外側",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594410,
+  "lat": 35.8698072,
+  "lon": 139.6431321,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "柳原義達",
+    "name": "風の中の鴉",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594411,
+  "lat": 35.8702503,
+  "lon": 139.6427289,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "湯村光",
+    "name": "天空へのメッセージ",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594412,
+  "lat": 35.8699065,
+  "lon": 139.6436526,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "フェルナンド•ボテロ",
+    "name": "横たわる人物",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594413,
+  "lat": 35.8704358,
+  "lon": 139.6432985,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "西村康造",
+    "name": "風の中で",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594414,
+  "lat": 35.8702318,
+  "lon": 139.6425130,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "サトル•タカダ",
+    "name": "子午線",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594415,
+  "lat": 35.8704127,
+  "lon": 139.6427458,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "山本信",
+    "name": "這うものたちの午後の眠り",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594416,
+  "lat": 35.8696715,
+  "lon": 139.6435628,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "ディオゲネスファッリ",
+    "name": "目に見える表面の下に",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594417,
+  "lat": 35.8697177,
+  "lon": 139.6435467,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "松本薫",
+    "name": "Cycle 90°",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916594418,
+  "lat": 35.8698072,
+  "lon": 139.6428986,
+  "timestamp": "2026-06-07T05:44:47Z",
+  "version": 1,
+  "changeset": 183764181,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "tags": {
+    "artist_name": "高岡典男",
+    "name": "ゆっくりと起き上がる精神の集積",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614191,
+  "lat": 35.8718061,
+  "lon": 139.6432764,
+  "timestamp": "2026-06-07T05:53:58Z",
+  "version": 1,
+  "changeset": 183764307,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "amenity": "pub",
+    "level": "0",
+    "name": "やきとん源氣"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614192,
+  "lat": 35.8718054,
+  "lon": 139.6432280,
+  "timestamp": "2026-06-07T05:53:58Z",
+  "version": 1,
+  "changeset": 183764307,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "contact:instagram": "https://www.instagram.com/mamawreath/",
+    "craft": "handicraft",
+    "level": "0",
+    "name": "mama wreath（ママリース）",
+    "opening_hours": "Mo-Su 10:30-17:30",
+    "phone": "048-767-3618"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614193,
+  "lat": 35.8718044,
+  "lon": 139.6431739,
+  "timestamp": "2026-06-07T05:53:58Z",
+  "version": 1,
+  "changeset": 183764307,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "level": "0",
+    "mobile": "+81-70-9239-2994",
+    "name": "KUMARI MART（クマリマート）",
+    "phone": "+81-70-4409-4742",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614194,
+  "lat": 35.8718779,
+  "lon": 139.6431711,
+  "timestamp": "2026-06-07T05:53:58Z",
+  "version": 1,
+  "changeset": 183764307,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "amenity": "nightclub",
+    "level": "0",
+    "name": "フィリピンガールズ Pub J",
+    "phone": "+81-48-825-2280"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614195,
+  "lat": 35.8718841,
+  "lon": 139.6432695,
+  "timestamp": "2026-06-07T05:53:58Z",
+  "version": 1,
+  "changeset": 183764307,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "barbecue",
+    "level": "0",
+    "name": "焼肉JIRU（ジル）",
+    "opening_hours": "Mo off"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614196,
+  "lat": 35.8718433,
+  "lon": 139.6431699,
+  "timestamp": "2026-06-07T05:53:58Z",
+  "version": 1,
+  "changeset": 183764307,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "洋食;オムライス;ハンバーグ;ハヤシライス",
+    "level": "1",
+    "name": "KITCHEN STICK-TO（キッチン スティック-トゥ）",
+    "opening_hours": "Mo off",
+    "phone": "+81-48-834-4433"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614197,
+  "lat": 35.8718522,
+  "lon": 139.6432747,
+  "timestamp": "2026-06-07T05:53:58Z",
+  "version": 1,
+  "changeset": 183764307,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "amenity": "hookah_lounge",
+    "name": "White Smoke"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614213,
+  "lat": 35.8717660,
+  "lon": 139.6444708,
+  "timestamp": "2026-06-07T05:51:21Z",
+  "version": 2,
+  "changeset": 183764272,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "pharmacy",
+    "healthcare": "pharmacy",
+    "level": "0",
+    "name": "そうごう薬局",
+    "phone": "048-814-0300"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614214,
+  "lat": 35.8717538,
+  "lon": 139.6444721,
+  "timestamp": "2026-06-07T05:51:21Z",
+  "version": 2,
+  "changeset": 183764272,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "level": "1",
+    "name": "ここち",
+    "phone": "048-826-5815",
+    "shop": "massage"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614215,
+  "lat": 35.8717408,
+  "lon": 139.6444733,
+  "timestamp": "2026-06-07T05:51:21Z",
+  "version": 2,
+  "changeset": 183764272,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "doctors",
+    "healthcare": "doctor",
+    "healthcare:speciality": "urology",
+    "level": "2,3",
+    "name": "石井クリニック",
+    "phone": "048-833-0010"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614216,
+  "lat": 35.8717281,
+  "lon": 139.6444736,
+  "timestamp": "2026-06-07T05:51:21Z",
+  "version": 2,
+  "changeset": 183764272,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "bar",
+    "level": "4",
+    "name": "Dining and Bar CRADLE"
+  }
+},
+{
+  "type": "node",
+  "id": 13916614543,
+  "lat": 35.8720224,
+  "lon": 139.6445203,
+  "timestamp": "2026-06-07T05:55:17Z",
+  "version": 1,
+  "changeset": 183764326,
+  "user": "babalab_kuwa",
+  "uid": 10864453,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "キッチンきく",
+    "opening_hours": "Mo-Fr 11:45-14:00,17:30-21:00; Sa,PH 12:00-14:00,17:30-21:00; Su off"
+  }
+},
+{
+  "type": "node",
+  "id": 13916616367,
+  "lat": 35.8717543,
+  "lon": 139.6444231,
+  "timestamp": "2026-06-07T05:44:38Z",
+  "version": 1,
+  "changeset": 183764177,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "カツ",
+    "name": "松のや"
+  }
+},
+{
+  "type": "node",
+  "id": 13916619715,
+  "lat": 35.8717771,
+  "lon": 139.6448156,
+  "timestamp": "2026-06-07T05:51:21Z",
+  "version": 1,
+  "changeset": 183764272,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "pub",
+    "level": "1",
+    "name": "博多酒場　エビス"
+  }
+},
+{
+  "type": "node",
+  "id": 13916619716,
+  "lat": 35.8717688,
+  "lon": 139.6448154,
+  "timestamp": "2026-06-07T05:51:21Z",
+  "version": 1,
+  "changeset": 183764272,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "doctors",
+    "healthcare": "doctor",
+    "level": "2,3",
+    "name": "イサオクリニック"
+  }
+},
+{
+  "type": "node",
+  "id": 13916619717,
+  "lat": 35.8717605,
+  "lon": 139.6448158,
+  "timestamp": "2026-06-07T05:51:21Z",
+  "version": 1,
+  "changeset": 183764272,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "level": "4",
+    "name": "荒川税理士事務所",
+    "office": "tax_advisor"
+  }
+},
+{
+  "type": "node",
+  "id": 13916623883,
+  "lat": 35.8717433,
+  "lon": 139.6441708,
+  "timestamp": "2026-06-07T06:09:56Z",
+  "version": 1,
+  "changeset": 183764639,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "dentist",
+    "healthcare": "dentist",
+    "level": "0",
+    "name": "トンボ歯科クリニック北浦和"
+  }
+},
+{
+  "type": "node",
+  "id": 13916623884,
+  "lat": 35.8717338,
+  "lon": 139.6441702,
+  "timestamp": "2026-06-07T06:09:56Z",
+  "version": 1,
+  "changeset": 183764639,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "prep_school",
+    "education": "prep_school",
+    "level": "1",
+    "name": "学研教室"
+  }
+},
+{
+  "type": "node",
+  "id": 13916623885,
+  "lat": 35.8717343,
+  "lon": 139.6442016,
+  "timestamp": "2026-06-07T06:09:56Z",
+  "version": 1,
+  "changeset": 183764639,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "music_school",
+    "education": "music_school",
+    "level": "1",
+    "name": "カワイ音楽教室"
+  }
+},
+{
+  "type": "node",
+  "id": 13916623886,
+  "lat": 35.8717248,
+  "lon": 139.6441699,
+  "timestamp": "2026-06-07T06:09:56Z",
+  "version": 1,
+  "changeset": 183764639,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "club": "yes",
+    "level": "2",
+    "name": "学童クラブ　アウラ"
+  }
+},
+{
+  "type": "node",
+  "id": 13916623887,
+  "lat": 35.8717253,
+  "lon": 139.6442105,
+  "timestamp": "2026-06-07T06:09:56Z",
+  "version": 1,
+  "changeset": 183764639,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "club": "yes",
+    "level": "2",
+    "name": "体操教室　コンフィアンサスポーツクラブ　北浦和教室"
+  }
+},
+{
+  "type": "node",
+  "id": 13916623888,
+  "lat": 35.8717159,
+  "lon": 139.6441696,
+  "timestamp": "2026-06-07T06:09:56Z",
+  "version": 1,
+  "changeset": 183764639,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "level": "3",
+    "name": "法律事務所　イマイズミ",
+    "office": "lawyer"
+  }
+},
+{
+  "type": "node",
+  "id": 13916623889,
+  "lat": 35.8717076,
+  "lon": 139.6441693,
+  "timestamp": "2026-06-07T06:09:56Z",
+  "version": 1,
+  "changeset": 183764639,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "club": "dance",
+    "level": "5",
+    "name": "Studio Yell"
+  }
+},
+{
+  "type": "node",
+  "id": 13916628101,
+  "lat": 35.8717606,
+  "lon": 139.6447025,
+  "timestamp": "2026-06-07T06:00:13Z",
+  "version": 1,
+  "changeset": 183764436,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "music_school",
+    "brand": "ヤマハ音楽教室",
+    "brand:en": "Yamaha Music School",
+    "brand:ja": "ヤマハ音楽教室",
+    "brand:ja-Latn": "Yamaha Ongaku Kyōshitsu",
+    "brand:wikidata": "Q90327852",
+    "education": "music_school",
+    "level": "1,2,3",
+    "name": "ヤマハ音楽教室",
+    "name:en": "Yamaha Music School",
+    "name:ja": "ヤマハ音楽教室",
+    "name:ja-Latn": "Yamaha Ongaku Kyōshitsu"
+  }
+},
+{
+  "type": "node",
+  "id": 13916628102,
+  "lat": 35.8718010,
+  "lon": 139.6449439,
+  "timestamp": "2026-06-07T06:00:13Z",
+  "version": 1,
+  "changeset": 183764436,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "pharmacy",
+    "healthcare": "pharmacy",
+    "level": "0",
+    "name": "そうごう薬局北浦和駅前店"
+  }
+},
+{
+  "type": "node",
+  "id": 13916628103,
+  "lat": 35.8717910,
+  "lon": 139.6449439,
+  "timestamp": "2026-06-07T06:00:13Z",
+  "version": 1,
+  "changeset": 183764436,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "club": "yes",
+    "level": "1",
+    "name": "友愛放課後児童クラブ"
+  }
+},
+{
+  "type": "node",
+  "id": 13916628104,
+  "lat": 35.8717813,
+  "lon": 139.6449443,
+  "timestamp": "2026-06-07T06:00:13Z",
+  "version": 1,
+  "changeset": 183764436,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "level": "2",
+    "name": "Vivid Hair Salon",
+    "phone": "048-832-0883",
+    "shop": "beauty"
+  }
+},
+{
+  "type": "node",
+  "id": 13916628105,
+  "lat": 35.8717713,
+  "lon": 139.6449447,
+  "timestamp": "2026-06-07T06:00:13Z",
+  "version": 1,
+  "changeset": 183764436,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "level": "4",
+    "name": "ロード法律事務所",
+    "office": "lawyer",
+    "phone": "048-711-6881"
+  }
+},
+{
+  "type": "node",
+  "id": 13916637309,
+  "lat": 35.8715288,
+  "lon": 139.6416108,
+  "timestamp": "2026-06-07T06:23:07Z",
+  "version": 1,
+  "changeset": 183764925,
+  "user": "KM0604",
+  "uid": 24187508,
+  "tags": {
+    "beauty": "eyelash",
+    "name": "Barbie Queen",
+    "note": "予約優先",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "phone": "+81 48 711 6836",
+    "shop": "beauty"
+  }
+},
+{
+  "type": "node",
+  "id": 13916648957,
+  "lat": 35.8718576,
+  "lon": 139.6452055,
+  "timestamp": "2026-06-07T06:30:15Z",
+  "version": 1,
+  "changeset": 183765099,
+  "user": "shiroyagi68",
+  "uid": 24092330,
+  "tags": {
+    "colour": "#ff0000",
+    "emergency": "fire_hydrant",
+    "fire_hydrant:position": "sidewalk",
+    "fire_hydrant:type": "pillar"
+  }
+},
+{
+  "type": "node",
+  "id": 13916649265,
+  "lat": 35.8714335,
+  "lon": 139.6442124,
+  "timestamp": "2026-06-07T06:42:50Z",
+  "version": 1,
+  "changeset": 183765401,
+  "user": "shiroyagi68",
+  "uid": 24092330,
+  "tags": {
+    "colour": "#ff0000",
+    "emergency": "fire_hydrant",
+    "fire_hydrant:position": "sidewalk",
+    "fire_hydrant:type": "pillar"
+  }
+},
+{
+  "type": "node",
+  "id": 13916653512,
+  "lat": 35.8720835,
+  "lon": 139.6454175,
+  "timestamp": "2026-06-07T06:27:34Z",
+  "version": 1,
+  "changeset": 183765038,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "amenity": "atm",
+    "brand": "ゆうちょ銀行",
+    "brand:en": "Japan Post Bank",
+    "brand:ja": "ゆうちょ銀行",
+    "brand:wikidata": "Q907103",
+    "operator": "ゆうちょ銀行",
+    "operator:wikidata": "Q907103"
+  }
+},
+{
+  "type": "node",
+  "id": 13916656901,
+  "lat": 35.8712328,
+  "lon": 139.6442706,
+  "timestamp": "2026-06-07T06:29:24Z",
+  "version": 1,
+  "changeset": 183765086,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "level": "0",
+    "name": "接骨鍼灸TOP　北浦和院",
+    "shop": "massage"
+  }
+},
+{
+  "type": "node",
+  "id": 13916656902,
+  "lat": 35.8712151,
+  "lon": 139.6442700,
+  "timestamp": "2026-06-07T06:29:24Z",
+  "version": 1,
+  "changeset": 183765086,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "golf": "clubhouse",
+    "level": "-1",
+    "name": "クラブハウス　エアーズ",
+    "phone": "048-824-4169"
+  }
+},
+{
+  "type": "node",
+  "id": 13916656903,
+  "lat": 35.8712529,
+  "lon": 139.6442713,
+  "timestamp": "2026-06-07T06:29:24Z",
+  "version": 1,
+  "changeset": 183765086,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "kindergarten",
+    "education": "kindergarten",
+    "level": "1",
+    "name": "子育て支援ルーム　ゆりかご",
+    "phone": "048-762-6754"
+  }
+},
+{
+  "type": "node",
+  "id": 13916656904,
+  "lat": 35.8712754,
+  "lon": 139.6442713,
+  "timestamp": "2026-06-07T06:29:24Z",
+  "version": 1,
+  "changeset": 183765086,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "prep_school",
+    "education": "prep_school",
+    "level": "2",
+    "name": "坪田塾"
+  }
+},
+{
+  "type": "node",
+  "id": 13916656905,
+  "lat": 35.8713419,
+  "lon": 139.6441415,
+  "timestamp": "2026-06-07T06:29:24Z",
+  "version": 1,
+  "changeset": 183765086,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "language_school",
+    "education": "language_school",
+    "level": "3",
+    "mobile": "048-822-1791",
+    "name": "Saiei International"
+  }
+},
+{
+  "type": "node",
+  "id": 13916656906,
+  "lat": 35.8713653,
+  "lon": 139.6441406,
+  "timestamp": "2026-06-07T06:29:24Z",
+  "version": 1,
+  "changeset": 183765086,
+  "user": "marumiii",
+  "uid": 23737784,
+  "tags": {
+    "amenity": "prep_school",
+    "education": "prep_school",
+    "level": "4",
+    "name": "TOMAS 北浦和校"
+  }
+},
+{
+  "type": "node",
+  "id": 13916656909,
+  "lat": 35.8717945,
+  "lon": 139.6436845,
+  "timestamp": "2026-06-07T06:36:50Z",
+  "version": 1,
+  "changeset": 183765247,
+  "user": "shiroyagi68",
+  "uid": 24092330,
+  "tags": {
+    "colour": "#ff0000",
+    "emergency": "fire_hydrant",
+    "fire_hydrant:position": "lane",
+    "fire_hydrant:type": "pillar"
+  }
+},
+{
+  "type": "node",
+  "id": 13916709302,
+  "lat": 35.8718201,
+  "lon": 139.6451026,
+  "timestamp": "2026-06-07T06:51:47Z",
+  "version": 1,
+  "changeset": 183765558,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "level": "0",
+    "name": "やきとり ひびき",
+    "shop": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13916709303,
+  "lat": 35.8718132,
+  "lon": 139.6450313,
+  "timestamp": "2026-06-07T06:51:47Z",
+  "version": 1,
+  "changeset": 183765558,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "brand": "Rakuten Mobile",
+    "brand:en": "Rakuten Mobile",
+    "brand:ja": "楽天モバイル",
+    "brand:wikidata": "Q97311741",
+    "level": "0",
+    "name": "楽天モバイル",
+    "name:en": "Rakuten Mobile",
+    "name:ja": "楽天モバイル",
+    "shop": "mobile_phone"
+  }
+},
+{
+  "type": "node",
+  "id": 13916709304,
+  "lat": 35.8717966,
+  "lon": 139.6450334,
+  "timestamp": "2026-06-07T06:51:47Z",
+  "version": 1,
+  "changeset": 183765558,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "italian",
+    "level": "1",
+    "name": "PIZZERIA TRATTORIA SOMETHING-QUATTRO"
+  }
+},
+{
+  "type": "node",
+  "id": 13916709305,
+  "lat": 35.8717797,
+  "lon": 139.6450345,
+  "timestamp": "2026-06-07T06:51:47Z",
+  "version": 1,
+  "changeset": 183765558,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "tags": {
+    "leisure": "pitch",
+    "name": "eスポーツ教室 eSPアカデミー北浦和校",
+    "sport": "multi"
+  }
+},
+{
+  "type": "way",
+  "id": 155998659,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8569051,
+    "lon": 139.6470410
+  },
+  "nodes": [
+    1683196767,
+    1683196770,
+    1683196716,
+    1683196717,
+    1683196767
+  ],
+  "tags": {
+    "building": "apartments",
+    "building:levels": "5",
+    "name": "高砂サニーコーポ",
+    "source": "Bing, 2007-03"
+  }
+},
+{
+  "type": "way",
+  "id": 189804780,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 3,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "center": {
+    "lat": 35.8703734,
+    "lon": 139.6432419
+  },
+  "nodes": [
+    2004078249,
+    13810478140,
+    13810478138,
+    13810478137,
+    13810478136,
+    13810478147,
+    13810478135,
+    2004078250,
+    13915804818,
+    2004078247,
+    13810478143,
+    13810478161,
+    13810478144,
+    13810478145,
+    13810478163,
+    13810478146
+  ],
+  "tags": {
+    "highway": "footway"
+  }
+},
+{
+  "type": "way",
+  "id": 260961704,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8658912,
+    "lon": 139.6509098
+  },
+  "nodes": [
+    13915365574,
+    13915365575,
+    2665586097
+  ],
+  "tags": {
+    "highway": "service",
+    "service": "alley",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 366808640,
+  "timestamp": "2026-06-07T04:47:02Z",
+  "version": 2,
+  "changeset": 183763254,
+  "user": "marumiii",
+  "uid": 23737784,
+  "center": {
+    "lat": 35.8716724,
+    "lon": 139.6444930
+  },
+  "nodes": [
+    3707857307,
+    3707857256,
+    3707857255,
+    3707857304,
+    3707857307
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "5",
+    "name": "TEKK BLDG.",
+    "source": "GSI/KIBAN 2500;survey, 2015-08-15"
+  }
+},
+{
+  "type": "way",
+  "id": 366808642,
+  "timestamp": "2026-06-07T04:47:02Z",
+  "version": 2,
+  "changeset": 183763254,
+  "user": "marumiii",
+  "uid": 23737784,
+  "center": {
+    "lat": 35.8717311,
+    "lon": 139.6447208
+  },
+  "nodes": [
+    3707857308,
+    3707857283,
+    3707857279,
+    3707857303,
+    3707857308
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "5",
+    "name": "小林ビル",
+    "source": "GSI/KIBAN 2500;survey, 2015-08-15"
+  }
+},
+{
+  "type": "way",
+  "id": 784222250,
+  "timestamp": "2026-06-07T05:36:51Z",
+  "version": 2,
+  "changeset": 183764035,
+  "user": "KM0604",
+  "uid": 24187508,
+  "center": {
+    "lat": 35.8718037,
+    "lon": 139.6424019
+  },
+  "nodes": [
+    7325690110,
+    7325690107,
+    7325690106,
+    7325690105,
+    7325690108,
+    7325690109,
+    7325690110
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "ビアンカ浦和"
+  }
+},
+{
+  "type": "way",
+  "id": 784222259,
+  "timestamp": "2026-06-07T06:04:50Z",
+  "version": 3,
+  "changeset": 183764532,
+  "user": "fksyj174",
+  "uid": 24186670,
+  "center": {
+    "lat": 35.8718463,
+    "lon": 139.6432233
+  },
+  "nodes": [
+    7325690153,
+    7325690150,
+    7325690151,
+    7325690152,
+    7325690153
+  ],
+  "tags": {
+    "addr:block_number": "33",
+    "addr:city": "さいたま市",
+    "addr:housenumber": "3",
+    "addr:neighbourhood": "常盤9丁目",
+    "addr:postcode": "330-0061",
+    "addr:province": "埼玉県",
+    "addr:suburb": "浦和区",
+    "building": "yes",
+    "building:levels": "2",
+    "name": "ピサロビル"
+  }
+},
+{
+  "type": "way",
+  "id": 794447975,
+  "timestamp": "2026-06-07T03:51:00Z",
+  "version": 2,
+  "changeset": 183762563,
+  "user": "bodybeat",
+  "uid": 24185088,
+  "center": {
+    "lat": 35.8719320,
+    "lon": 139.6445745
+  },
+  "nodes": [
+    7430659099,
+    7430659098,
+    13915804831,
+    7430659079,
+    7430659097,
+    7430659096,
+    7430659099
+  ],
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 907796555,
+  "timestamp": "2026-06-07T05:15:07Z",
+  "version": 2,
+  "changeset": 183763673,
+  "user": "nkei",
+  "uid": 24191819,
+  "center": {
+    "lat": 35.8708471,
+    "lon": 139.6447290
+  },
+  "nodes": [
+    8429415830,
+    13915804568,
+    8429415831,
+    8429415832,
+    8429415830
+  ],
+  "tags": {
+    "building": "commercial",
+    "building:levels": "3",
+    "name": "ミウラ第二ビル"
+  }
+},
+{
+  "type": "way",
+  "id": 972142440,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8828844,
+    "lon": 139.6416081
+  },
+  "nodes": [
+    8997430857,
+    13915365585,
+    13915365584,
+    8997430856,
+    8997430855,
+    13915365586,
+    13915365587,
+    8997430854,
+    8997430857
+  ],
+  "tags": {
+    "building": "apartments",
+    "building:levels": "3",
+    "name": "テラスユーザ"
+  }
+},
+{
+  "type": "way",
+  "id": 1312137994,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8840220,
+    "lon": 139.6413667
+  },
+  "nodes": [
+    12145320763,
+    12145320760,
+    12145320761,
+    12145320762,
+    12145320746,
+    12145320747,
+    12145320763
+  ],
+  "tags": {
+    "building": "apartments",
+    "building:levels": "3",
+    "name": "ヘーベルメゾンネクスト"
+  }
+},
+{
+  "type": "way",
+  "id": 1507878457,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 2,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8764324,
+    "lon": 139.6454273
+  },
+  "nodes": [
+    13787810108,
+    13787810109,
+    13787810110,
+    13787810111,
+    13787810112,
+    13787810113,
+    13787810108
+  ],
+  "tags": {
+    "building": "apartments",
+    "building:levels": "4",
+    "name": "Non Sugar70"
+  }
+},
+{
+  "type": "way",
+  "id": 1526845505,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8652793,
+    "lon": 139.6508245
+  },
+  "nodes": [
+    13915365561,
+    13915365562,
+    13915365563,
+    13915365564,
+    13915365561
+  ],
+  "tags": {
+    "building": "retail"
+  }
+},
+{
+  "type": "way",
+  "id": 1526845506,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8653103,
+    "lon": 139.6509688
+  },
+  "nodes": [
+    13915365565,
+    13915365566,
+    13915365567,
+    13915365568,
+    13915365565
+  ],
+  "tags": {
+    "building": "retail",
+    "building:levels": "2"
+  }
+},
+{
+  "type": "way",
+  "id": 1526845507,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8652490,
+    "lon": 139.6509691
+  },
+  "nodes": [
+    13915365568,
+    13915365569,
+    13915365570,
+    13915365571,
+    13915365572,
+    13915365567,
+    13915365568
+  ],
+  "tags": {
+    "building": "roof",
+    "layer": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 1526845508,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8658150,
+    "lon": 139.6505809
+  },
+  "nodes": [
+    2665586095,
+    13915365574
+  ],
+  "tags": {
+    "highway": "steps",
+    "source": "Bing"
+  }
+},
+{
+  "type": "way",
+  "id": 1526845509,
+  "timestamp": "2026-06-06T20:36:01Z",
+  "version": 1,
+  "changeset": 183755287,
+  "user": "feli-lj",
+  "uid": 8345923,
+  "center": {
+    "lat": 35.8659970,
+    "lon": 139.6513829
+  },
+  "nodes": [
+    13915365576,
+    13915365577,
+    13915365578,
+    13915365579,
+    13915365580,
+    13915365581,
+    13915365582,
+    13915365583,
+    13915365576
+  ],
+  "tags": {
+    "building": "apartments",
+    "building:levels": "4",
+    "name": "エミネックス浦和"
+  }
+},
+{
+  "type": "relation",
+  "id": 2150021,
+  "timestamp": "2026-06-07T06:21:45Z",
+  "version": 429,
+  "changeset": 183764855,
+  "user": "tochirinuru",
+  "uid": 15068505,
+  "center": {
+    "lat": 36.8028189,
+    "lon": 139.2741243
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 23814983,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 631239775,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 631239774,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 550689174,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 550689175,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 371560393,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1031963658,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 24461574,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 174757582,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1424558210,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1424558215,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1424558216,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1424558211,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 788084211,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 682712371,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33627592,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 408269725,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33627285,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33656107,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 89219856,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 379075309,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 89219861,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1485719806,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1004202301,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 174757591,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1424558212,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 228056328,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 874155681,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 874155678,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33627357,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 379075282,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33627353,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 228056327,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33656106,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 682712372,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 26322270,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 32130422,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647208149,
+      "role": "backward"
+    },
+    {
+      "type": "way",
+      "ref": 160745254,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1383473241,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 254325086,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1383250109,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 254325084,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 254326631,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 463284094,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 55686236,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 591488198,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1446244374,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 34949380,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1457644079,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 958537535,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 27695695,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1320388558,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1320388557,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1320746984,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1320746983,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 866351232,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 459037937,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 130453217,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 537438900,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1322137182,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 787844999,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 787845001,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 787845000,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1322905299,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 236667147,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 787845006,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 101532872,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1322902456,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 160745250,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1360876930,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 177666452,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 177666451,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1345993465,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1345993466,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1017812315,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 914437640,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 116950410,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 236667145,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 237789922,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 26100517,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 182342454,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 182342467,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 276720243,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 276720240,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 26100482,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 209855613,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 37552850,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 274825796,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178082226,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178083410,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 438474208,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1117561465,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1117561464,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 274825795,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 260066669,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178004656,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 209855609,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178004649,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178004648,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 128008437,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 770959148,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 657576530,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178085024,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1069178564,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178085035,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178085033,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 130453214,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 23168888,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 177666454,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1360876929,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 386286299,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 177666453,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1345993464,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1345993463,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1345993460,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 237789919,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1017812316,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 101532876,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 665555691,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 665555683,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 116950411,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 237789920,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 236667128,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 182342458,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 182342470,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 276720248,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 276720246,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 772844186,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 260066670,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 274825794,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178083408,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178083409,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 270174781,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 878639908,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1117561466,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1117561462,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 270174782,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 260066671,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178004647,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178004653,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178004652,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178004655,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 128008445,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 770959149,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 657576524,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178085038,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1069178566,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178085043,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178085030,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 128008442,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 771051387,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178085040,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 771051376,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 771051373,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 89665996,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 771051390,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 254129929,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 254129928,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1431055754,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 770956922,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1448000088,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 353808416,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1448000089,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1435254894,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1435254895,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1443823803,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1457910900,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1435254896,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1435254897,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1435121484,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1458402017,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1458402012,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1434980227,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1378470267,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 770946866,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1442956345,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1378431878,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1378431879,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1434980230,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1378433864,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1443633937,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 378370936,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 378370937,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 89665990,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1241545251,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1241545250,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 24027919,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201054495,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1241564762,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1368108297,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1368108298,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1378070866,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1344490766,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201054494,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 203864958,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1426799661,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1426799659,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1426799660,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 203864959,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1426799658,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1426799657,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 22694548,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 951318642,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 785571764,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1416437356,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1416437358,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1416437360,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201054493,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1164778158,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201054491,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 22799969,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201053444,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201053443,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201053445,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 201053446,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 22884441,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57922477,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57922476,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57922473,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 651546696,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 23061485,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 23061488,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 999760746,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 999760743,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 999761407,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 466921207,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 229373064,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1253567818,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 796758789,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 796758793,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1189929735,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1189931182,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1189931180,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 798794756,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191321627,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191320552,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1145025581,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190367180,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323093,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323491,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 211035204,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323529,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323603,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323606,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191324694,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191324825,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191324894,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 137062945,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647208145,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647301105,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191324958,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1347529045,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1347529044,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 813802276,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1389747641,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1389747642,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191325314,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191325346,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 137066877,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1208769686,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1208769685,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1117940685,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647301094,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1120226607,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 160745253,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 708072593,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57922469,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57922472,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57922485,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57922486,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 999760747,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 999760744,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 999761408,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 796758787,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1253567817,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1189931184,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 796758791,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 798794755,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1189931183,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 334174576,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191321625,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191320551,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1145025579,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190367181,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 228635677,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190367178,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323096,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1186822644,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323492,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1117726257,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323531,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191323605,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191324697,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191324828,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191324896,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 23349460,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 527118746,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191324960,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1313612126,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 813802273,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 813802272,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191325218,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191325316,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1389747639,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1389747640,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1191325348,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647301102,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 378344906,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1208769688,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1208769687,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1117940684,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1120226606,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647301086,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 378344281,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 137066878,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 565443950,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026658493,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1464551352,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026658494,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 405334405,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 23578799,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 785497977,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1147819459,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 42303740,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882257,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882256,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 645709233,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882244,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882247,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882249,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1147604447,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1147604444,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1147604440,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 801574094,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 404946838,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1163757409,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 785497976,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 793098870,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882258,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882254,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 645709235,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882243,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882245,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1146882252,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1147604445,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647210306,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1147604442,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 378313813,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 229360802,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 793098871,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 378324915,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026098301,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026098300,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 835487225,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055833,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055834,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 759955864,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055832,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055831,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055830,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055829,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055828,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055827,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055826,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1026055825,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 759954903,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 759954904,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 544682168,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 544682167,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 229370675,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 120312806,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 23349428,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 751154339,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 645548278,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1518294865,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1518294864,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1165694130,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1165694129,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121023575,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 403871496,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 190409359,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1247530563,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1247530562,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121080332,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121080330,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121067388,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121067376,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121054728,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 279401340,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121054729,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121320269,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121320273,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121041421,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121954637,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 121954645,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 73025740,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 373713287,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 802338190,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1037035934,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 802338189,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1037035935,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1119361514,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 195411842,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 481400547,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 302553887,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 159840260,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117720001,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117719996,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 159840256,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 159840262,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33972098,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 179278887,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33972099,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 159840261,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 302624819,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 136236235,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 136145913,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 159685643,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33972336,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33972337,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 809047742,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 965283957,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 159710612,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 168144120,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 965283926,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 168144105,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 159710621,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 809047740,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112837000,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 302307459,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 478468362,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 302307460,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112837067,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112837004,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 314272573,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 166355280,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 210044509,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 43367679,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 159704042,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 206679472,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 206679532,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 188927588,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 188927589,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 322768206,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 322768207,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178645149,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1213810644,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1213810645,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178645150,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 303920845,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 115816146,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 303920859,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 303920869,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 161393350,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 43367687,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 43367686,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33972101,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33972100,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 179278886,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 159840263,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 136236233,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 136236237,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 136145919,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 302624813,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33972339,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 963888150,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 809047741,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 159710619,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 168144080,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 965283958,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 168144081,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 159710616,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 965283925,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 302307458,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 33972345,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 517576131,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112836994,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 210044512,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112837012,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 314272572,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112837009,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178666635,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 210044508,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 210044507,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 166509768,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178645158,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 206679473,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 206679533,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 232347859,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 232347860,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 188927586,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 322768208,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 322768209,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 188927590,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 178645153,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 303920860,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1213810653,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1213810646,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 115816244,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 303920858,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 303920868,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 115816190,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 31274974,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 31274973,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 335041271,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 43367684,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 437163806,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 159721331,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 282545096,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 282545097,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 161319573,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 161319575,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112174250,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 318782970,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 318782972,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1225625063,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1225625065,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 306469723,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 301740066,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 301740069,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 161319576,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112174379,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 318782971,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 318782969,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112174385,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1230089534,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1441718682,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647208146,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 548869265,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 301740072,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 301740067,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 112174317,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1225625068,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 112174304,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 301740064,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 112174330,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 112174287,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 681561492,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 192270516,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 192270513,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 112174344,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 112174300,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 241020036,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 161178412,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 301740065,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 981628937,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 981628938,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 207769770,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 207769783,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 207769773,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 207769781,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 213174866,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 161178420,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 213179488,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 192270515,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 722163919,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 192270523,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 210628784,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 210628786,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 336762825,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 240267438,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 301740063,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 981628936,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 207769782,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 207769768,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 207769785,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 207769772,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 213174874,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 161178431,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 213174849,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 722163920,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 192270514,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 161178418,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 161178423,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 323212326,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 210628785,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 27641088,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 405791935,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 405791936,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 210628791,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 606640898,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 606640895,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 606640890,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 606640892,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 544728043,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 544728042,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 544728048,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1257902852,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1257902855,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1257902853,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1257902854,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 437163795,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1025404394,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1025404395,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 343749784,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1025404341,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1025404340,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 210708019,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27641085,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27641084,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 295081624,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 210708020,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27641083,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27641082,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27641080,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640640,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 295081623,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640641,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604304,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 210708018,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 437163805,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 532847582,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 437163804,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604303,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604302,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604301,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604300,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604299,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604297,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604296,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27603789,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 437163796,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27603788,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27603787,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 643041337,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604282,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 182278783,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 182278785,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 280952533,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604283,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604284,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604285,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604286,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604288,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604289,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604290,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640633,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640634,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640632,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640631,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640630,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640629,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647301023,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640628,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640627,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647301031,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640624,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640625,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1002051700,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640623,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640622,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640621,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640619,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640608,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603682,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603681,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640610,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640612,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640615,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603698,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640618,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603699,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603697,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640617,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27601497,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 464487479,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 464487482,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 464487483,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 464487480,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 464487481,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27619912,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603683,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103154,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1189841358,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103155,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103156,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27556140,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103160,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103159,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103157,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 625019211,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295395,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603690,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603691,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603692,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27556138,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603693,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27619942,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603694,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603695,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603689,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295394,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103151,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640605,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103150,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647301008,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640603,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27556136,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295392,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27619939,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295391,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640601,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 643009040,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 643009039,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27619934,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603684,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 614568976,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103130,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295388,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295390,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295389,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1089103131,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640600,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295380,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295379,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295378,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295381,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 27640599,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295384,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295382,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295386,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 27400664,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1089103149,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295383,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603686,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603685,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647301014,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27400630,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603687,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295372,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295373,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295371,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295374,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295370,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295369,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 226375812,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295368,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27619925,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295365,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295364,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295366,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1089103133,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27619921,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103132,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103134,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27400629,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103136,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295362,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295361,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295363,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 27619916,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295348,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647301002,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 591603688,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640597,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27640598,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295347,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27400627,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295340,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1089103143,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295341,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295344,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 226376650,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295346,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295325,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 427167114,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295326,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 427167113,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295330,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27603811,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295318,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295317,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295331,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295328,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295327,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295315,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 884295316,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 647300994,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295311,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295313,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295312,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295303,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295302,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295300,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295299,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295310,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295297,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295296,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660570,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884295294,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103146,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660569,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660568,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660566,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103145,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660565,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660563,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660562,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660561,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1089103144,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660556,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 884660560,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 27604438,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 625025526,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 479840235,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 479840236,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1022429435,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1022429434,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 308079519,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 308079520,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 308063450,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 308063451,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 308074365,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 308074364,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 272226030,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 272226029,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 272226031,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 215332633,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 612401693,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 612401684,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1025394615,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1025394614,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1015996706,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1015996707,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647300986,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1388199933,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 432593401,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 432593400,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1015996723,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1015996722,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1015996724,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1015996725,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647300978,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1015996729,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1015996730,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 189485695,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 986806303,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 986806302,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 215332636,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 272689964,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 272689959,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 272689960,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647300972,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 272241325,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 272241324,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 865783804,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 865783803,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 215332638,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 215332639,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 437154885,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 642836426,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 642836427,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 437154886,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 215332632,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1526347559,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1526347558,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114839086,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 429527743,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114839141,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437352,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437335,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 439143187,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437343,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437331,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437353,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437329,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437340,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 437154887,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 647300963,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437328,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 124437350,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117330369,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117330364,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 850363637,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117330366,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117330370,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 250752334,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 250752335,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 250752321,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117330367,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117330373,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 405589119,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 369083520,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 369083519,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 405589118,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 413450250,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 405589117,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 413450251,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 37582254,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 37582256,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114816750,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114816749,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114816693,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114816654,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 849084764,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47183882,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 47183884,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117322921,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 117322887,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 25656366,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 642808663,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 642806926,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 546855237,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322926,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322922,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322916,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322908,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322923,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322906,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322913,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322917,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816697,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816809,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816781,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581722,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112104,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581724,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1527096848,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1188010435,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 24409965,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 154263058,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816722,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816643,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455161,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816802,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816648,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455158,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455160,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455154,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1445402865,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1445402866,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455163,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112100,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112098,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455121,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455125,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455124,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455123,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 626200939,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 425384523,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 425384525,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581750,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1136234771,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1136234770,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1136234772,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581747,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581744,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112088,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581740,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814670,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 531058797,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 642808664,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 624994296,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 642806925,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322919,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 546855222,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322925,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322920,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322912,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322909,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322924,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322905,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117322911,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816785,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816682,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816798,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816630,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581723,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112105,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581725,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 24385754,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1527096849,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1188010436,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112102,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816590,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816718,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455164,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455157,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816676,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114816720,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455162,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455153,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455159,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455156,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112101,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112099,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455120,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455122,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455127,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 117455126,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 626200942,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112089,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 425384524,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409590891,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 425384522,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1136234769,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1136234768,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48112090,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581745,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581743,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581738,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 24385758,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814672,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 531058796,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581737,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1190293378,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 626295302,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 626295949,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 626295545,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293373,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293370,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293367,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293362,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293366,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293359,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293356,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293355,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293351,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814691,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 113663028,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 113663022,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 420917999,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 626327656,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 24385767,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 563014217,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293348,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293341,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293347,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293338,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293335,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293331,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293328,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293327,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293325,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1497600912,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1497600913,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293321,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293377,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293375,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293372,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293369,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293364,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293361,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293358,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293354,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 113663042,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814686,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 113663033,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 626327655,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 420917997,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 420917996,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293343,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293346,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293340,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293337,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293333,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293330,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1190293323,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1497600914,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 626328334,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1497600910,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1497600911,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 26381175,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1497600908,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1497600909,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814695,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1409581736,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 676740914,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1409581735,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 113663027,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114882365,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 676740913,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114878279,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 479223437,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 479223435,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 479223432,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 479223439,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 675774008,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 675774007,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 675774024,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114862281,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 114861541,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1409581734,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1409581733,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1409581732,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1409581731,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 625492024,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 911239596,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 911239595,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 387913045,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581730,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 387913044,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1451211806,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814698,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814707,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 625492023,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581728,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1466174598,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1037347658,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1037347651,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1037347643,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57690573,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701114,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701115,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 154263075,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1485369249,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701103,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701122,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701120,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701117,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567140,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567137,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567129,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701123,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701105,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567128,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567139,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567135,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567127,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567133,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 49090003,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 49090002,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701142,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701138,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57691708,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 154263073,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905290,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905289,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905282,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905281,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905278,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905277,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905276,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 114851175,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581729,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 51993460,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1451211807,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814703,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 640814712,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1037347659,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1037347655,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1037347660,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1409581727,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1466174597,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1037347650,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1037347644,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 154263034,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567143,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701107,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1485369252,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1485369253,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1485369251,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 41374628,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701104,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 23995530,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701121,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567132,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567141,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567136,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701119,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701124,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567130,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567131,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567138,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567134,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252567126,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 113524818,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 49090004,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701132,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701143,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 154263077,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 154263067,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 849427308,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701141,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57701144,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 57691709,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 153343062,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 48534025,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905286,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905285,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905280,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905279,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905275,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 1050905274,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 286598281,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 153343055,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 472363961,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 632547754,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 50978728,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 948339439,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 948339434,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 948339441,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 252726887,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 948339435,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 948339442,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 948339431,
+      "role": "forward"
+    },
+    {
+      "type": "way",
+      "ref": 49244422,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 49238702,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 49238701,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 840727889,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1444224291,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 377694226,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 875339506,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 377694179,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "name": "国道17号",
+    "name:en": "National Highway Route 17",
+    "name:es": "Ruta nacional 17",
+    "name:fr": "Route nationale 17",
+    "name:ja": "国道17号",
+    "name:ja-Hira": "こくどうじゅうななごう",
+    "name:ja-Latn": "Kokudō 17-gō",
+    "name:ko": "국도 17호선",
+    "network": "JP:national",
+    "ref": "17",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q1057683",
+    "wikipedia": "ja:国道17号"
+  }
+}
+
+  ]
+}

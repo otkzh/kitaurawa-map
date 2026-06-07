@@ -7,10 +7,10 @@ Leaflet版ではOpenStreetMap / Overpass APIから取得した生活に関わる
 ## 方針
 
 - Beforeは、現時点でOverpass APIから取得して保存した `data/before-osm.json` を参照します。
-- 初期表示ではBefore JSONだけを読み込み、Overpass APIにはアクセスしません。
+- 初期表示では保存済みJSONだけを読み込み、Overpass APIにはアクセスしません。
 - Leaflet版のAfterは、画面下部の「Afterを取得」ボタンを押したときだけOverpass APIから取得します。
 - Leaflet版のAfter判定は `survey:date=2026-06-07` または `note=北浦和居場所マッピングパーティー` を含む地点です。
-- MapLibre版ではAfter表示を使わず、「本日変更を取得」ボタンで日本時間 `2026-06-07 00:00` 以降に変更された範囲内の地物をOverpass APIから取得し、黄色い外枠で強調します。
+- MapLibre版ではAfter表示を使わず、初回は `data/changed-osm.json` の本日変更を表示します。「本日変更を再取得」ボタンで日本時間 `2026-06-07 00:00` 以降に変更された範囲内の地物をOverpass APIから取り直し、黄色い外枠で強調します。
 - ビルド不要の静的Webアプリとして、ローカルHTTPサーバーで動かします。
 
 ## 保存済みBeforeデータ
@@ -19,6 +19,14 @@ Leaflet版ではOpenStreetMap / Overpass APIから取得した生活に関わる
 - OSMベース時刻: `2026-06-06T09:46:02Z`
 - 日本時間換算: `2026-06-06 18:46:02`
 - 要素数: `1996`
+
+## 保存済み本日変更データ
+
+- ファイル: `data/changed-osm.json`
+- 条件: 日本時間 `2026-06-07 00:00` 以降の変更、UTC `2026-06-06T15:00:00Z` 以降
+- OSMベース時刻: `2026-06-07T06:53:09Z`
+- 要素数: `232`
+- タグ付き要素数: `193`
 
 ## 起動方法
 
@@ -32,13 +40,15 @@ python3 -m http.server 8000
 http://localhost:8000/
 ```
 
-MapLibre版は以下を開きます。Before JSONなどのデータはLeaflet版と共通です。
+`index.html` はMapLibre版です。Before JSONなどのデータはLeaflet版と共通です。
+
+Leaflet版は補助版として以下から開けます。
 
 ```text
-http://localhost:8000/maplibre.html
+http://localhost:8000/leaflet.html
 ```
 
-MapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。また、範囲内の当日変更地物を必要なときだけOverpass APIから取得して強調でき、本日変更ラベルには必要に応じてOSMユーザ名も表示できます。
+メインのMapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。また、範囲内の当日変更地物を必要なときだけOverpass APIから取得して強調でき、本日変更ラベルには必要に応じてOSMユーザ名も表示できます。
 
 ## Beforeデータの更新
 
@@ -52,15 +62,25 @@ curl -L --max-time 120 -o data/before-osm.json --data-urlencode data@scripts/bef
 
 環境によってはOverpassミラーごとにOSMベース時刻が異なります。取得後は `data/before-osm.json` の `osm3s.timestamp_osm_base` と `elements` 件数を確認してください。
 
+## 本日変更データの更新
+
+保存済み本日変更を取り直す場合は、以下のクエリをOverpass APIにPOSTし、結果を `data/changed-osm.json` に保存します。
+
+```bash
+curl -L --max-time 120 -o data/changed-osm.json --data-urlencode data@scripts/changed-overpass.query https://overpass.openstreetmap.fr/api/interpreter
+```
+
 ## ファイル構成
 
-- `index.html`: アプリ本体のHTML
-- `maplibre.html`: MapLibre版アプリのHTML
+- `index.html`: MapLibre版アプリ本体のHTML
+- `leaflet.html`: Leaflet版アプリのHTML
 - `src/styles.css`: 画面スタイル
 - `src/main.js`: Leaflet描画、フィルター、Overpass取得処理
 - `src/maplibre-main.js`: MapLibre描画、フィルター、Overpass取得処理
 - `data/before-osm.json`: Beforeとして使う保存済みOSM JSON
+- `data/changed-osm.json`: 本日変更として使う保存済みOSM JSON
 - `scripts/before-overpass.query`: Before取得用Overpass QL
+- `scripts/changed-overpass.query`: 本日変更取得用Overpass QL
 - `SPEC.md`: 仕様書
 
 ## 表示対象
@@ -82,4 +102,4 @@ curl -L --max-time 120 -o data/before-osm.json --data-urlencode data@scripts/bef
 
 ## 注意
 
-地図タイルとCDNにはインターネット接続が必要です。Leaflet版のAfter取得用Overpass APIへのアクセスは「Afterを取得」ボタン、MapLibre版の本日変更取得用Overpass APIへのアクセスは「本日変更を取得」ボタンを押した後だけ発生します。
+地図タイルとCDNにはインターネット接続が必要です。Leaflet版のAfter取得用Overpass APIへのアクセスは「Afterを取得」ボタン、MapLibre版の本日変更取得用Overpass APIへのアクセスは「本日変更を再取得」ボタンを押した後だけ発生します。

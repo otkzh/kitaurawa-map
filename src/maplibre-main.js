@@ -2,6 +2,7 @@ const CONFIG = {
   changedSinceJstLabel: '2026-06-07 00:00',
   changedSinceUtc: '2026-06-06T15:00:00Z',
   beforeDataUrl: 'data/before-osm.json',
+  changedDataUrl: 'data/changed-osm.json',
   bounds: { south: 35.857, west: 139.625, north: 35.888, east: 139.665 },
   center: [139.645, 35.872],
   zoom: 15,
@@ -363,6 +364,12 @@ async function loadBeforeSnapshot() {
   return response.json();
 }
 
+async function loadChangedSnapshot() {
+  const response = await fetch(CONFIG.changedDataUrl, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`本日変更JSONを読み込めません: ${response.status}`);
+  return response.json();
+}
+
 function elementToFeature(element, source) {
   const tags = element.tags || {};
   const lat = element.lat ?? element.center?.lat;
@@ -656,18 +663,22 @@ async function loadChangedData() {
 }
 
 async function loadBeforeData() {
-  setStatus('保存済みBeforeデータを読み込んでいます。');
+  setStatus('保存済みBeforeデータと本日変更データを読み込んでいます。');
   try {
-    const beforeJson = await loadBeforeSnapshot();
+    const [beforeJson, changedJson] = await Promise.all([
+      loadBeforeSnapshot(),
+      loadChangedSnapshot()
+    ]);
     beforeSnapshotFeatures = dedupeFeatures((beforeJson.elements || []).map(el => elementToFeature(el, 'before')));
     beforeFeatures = beforeSnapshotFeatures;
-    changedFeatures = [];
+    changedFeatures = dedupeFeatures((changedJson.elements || []).filter(elementHasTags).map(el => elementToFeature(el, 'changed')));
     render();
-    setStatus(`Before ${beforeFeatures.length}件を表示しています。本日変更は未取得です。`);
+    setStatus(`Before ${beforeFeatures.length}件、保存済み本日変更 ${changedFeatures.length}件を表示しています。`);
+    document.getElementById('changedButton').textContent = '本日変更を再取得';
   } catch (error) {
     console.error(error);
     setStatus(error.message);
-    alert(`Beforeデータの読み込みに失敗しました。\n${error.message}`);
+    alert(`保存済みデータの読み込みに失敗しました。\n${error.message}`);
   }
 }
 
