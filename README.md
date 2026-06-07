@@ -38,7 +38,7 @@ MapLibre版は以下を開きます。Before JSONなどのデータはLeaflet版
 http://localhost:8000/maplibre.html
 ```
 
-MapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。また、範囲内の当日変更地物を必要なときだけOverpass APIから取得して強調できます。
+MapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。また、範囲内の当日変更地物を必要なときだけOverpass APIから取得して強調でき、本日変更ラベルには必要に応じてOSMユーザ名も表示できます。
 
 ## Beforeデータの更新
 

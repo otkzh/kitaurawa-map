@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css">
   <link rel="stylesheet" href="src/styles.css">
   <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
-  <script src="src/maplibre-main.js" defer></script>
+  <script src="src/maplibre-main.js?v=20260607-user-labels-2" defer></script>
 </head>
 <body>
   <div id="app">
@@ -25,6 +25,7 @@
         <label><input type="checkbox" data-layer="before" checked> Before: 保存済みOSM</label>
         <label><input type="checkbox" data-layer="changed" checked> 本日変更</label>
         <label><input type="checkbox" data-layer="theme" checked> 注目タグ強調</label>
+        <label><input type="checkbox" id="showChangedUserLabels"> 本日変更ラベルにOSMユーザ名</label>
       </section>
 
       <section class="section">

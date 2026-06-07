@@ -85,6 +85,7 @@ const state = {
     mobility: true,
     other: true
   },
+  labels: { showChangedUser: false },
   dateFilter: { from: 2010, to: new Date().getFullYear(), showNoDate: true }
 };
 
@@ -219,9 +220,10 @@ function ensurePoiLabelLayer() {
     type: 'symbol',
     source: 'pois',
     minzoom: 14.5,
-    filter: ['has', 'name'],
+    filter: ['has', 'labelText'],
     layout: {
-      'text-field': ['get', 'name'],
+      'text-field': ['get', 'labelText'],
+      'text-font': ['Noto Sans Regular'],
       'text-size': [
         'interpolate',
         ['linear'],
@@ -372,10 +374,16 @@ function elementToFeature(element, source) {
     lon,
     tags,
     source,
+    osmType: element.type,
+    osmId: element.id,
     category: getCategory(tags),
     themeTags: getThemeTags(tags),
     isChanged: source === 'changed',
     timestamp: element.timestamp || null,
+    version: element.version || null,
+    changeset: element.changeset || null,
+    user: element.user || null,
+    uid: element.uid || null,
     year: getElementYear(element)
   };
 }
@@ -436,7 +444,8 @@ function render() {
   addMapSourcesAndLayers();
 
   const beforeIds = new Set(beforeFeatures.map(feature => feature.id));
-  const changedIds = new Set(changedFeatures.map(feature => feature.id));
+  const changedFeatureById = new Map(changedFeatures.map(feature => [feature.id, feature]));
+  const changedIds = new Set(changedFeatureById.keys());
   const changedOnlyFeatures = changedFeatures.filter(feature => !beforeIds.has(feature.id));
   const combined = [...beforeFeatures, ...changedOnlyFeatures];
   const visible = [];
@@ -444,8 +453,9 @@ function render() {
 
   for (const feature of combined) {
     if (!visibleByFilter(feature)) continue;
-    const renderedFeature = changedIds.has(feature.id)
-      ? { ...feature, isChanged: true }
+    const changedFeature = changedFeatureById.get(feature.id);
+    const renderedFeature = changedFeature
+      ? { ...feature, ...changedFeature, isChanged: true }
       : feature;
     if (renderedFeature.isChanged && !state.layers.changed) continue;
     if (!renderedFeature.isChanged && !state.layers.before) continue;
@@ -464,24 +474,36 @@ function render() {
 }
 
 function featureToGeoJson(feature) {
+  const labelText = getLabelText(feature);
+  const properties = {
+    id: feature.id,
+    name: feature.tags.name || '',
+    category: feature.category,
+    color: COLORS[feature.category] || COLORS.other,
+    changed: feature.isChanged,
+    selected: selectedFeatureId === feature.id,
+    themeVisible: state.layers.theme && feature.themeTags.length > 0,
+    labelPriority: getLabelPriority(feature)
+  };
+  if (labelText) properties.labelText = labelText;
+
   return {
     type: 'Feature',
     id: feature.id,
-    properties: {
-      id: feature.id,
-      name: feature.tags.name || '',
-      category: feature.category,
-      color: COLORS[feature.category] || COLORS.other,
-      changed: feature.isChanged,
-      selected: selectedFeatureId === feature.id,
-      themeVisible: state.layers.theme && feature.themeTags.length > 0,
-      labelPriority: getLabelPriority(feature)
-    },
+    properties,
     geometry: {
       type: 'Point',
       coordinates: [feature.lon, feature.lat]
     }
   };
+}
+
+function getLabelText(feature) {
+  const name = feature.tags.name || '';
+  if (feature.isChanged && state.labels.showChangedUser && feature.user) {
+    return [name, `@${feature.user}`].filter(Boolean).join('\n');
+  }
+  return name;
 }
 
 function getLabelPriority(feature) {
@@ -540,15 +562,26 @@ function buildInfoRows(feature) {
   push('カテゴリ', getCategoryLabel(feature.category));
   push('分類タグ', t.amenity || t.shop || t.leisure || t.emergency || t.highway || t.railway || t.public_transport);
   push('業種', t.cuisine || t.healthcare || t.social_facility || t.shop);
+  push('OSM種別', feature.osmType);
+  push('OSM ID', feature.osmId ? String(feature.osmId) : '');
+  push('OSMユーザ名', feature.user, formatOsmUser);
+  push('OSM UID', feature.uid ? String(feature.uid) : '');
+  push('バージョン', feature.version ? String(feature.version) : '');
+  push('変更セット', feature.changeset ? String(feature.changeset) : '', formatChangeset);
+  push('最終更新', feature.timestamp);
+  push('更新年', feature.year ? String(feature.year) : '不明');
   push('営業時間', t.opening_hours, formatOpeningHours);
   push('電話番号', t.phone || t['contact:phone']);
   push('Web', t.website || t['contact:website']);
+  push('ブランド', t.brand || t.operator);
+  push('公式名', t.official_name || t.alt_name);
   push('住所', t['addr:full'] || [t['addr:city'], t['addr:suburb'], t['addr:street'], t['addr:housenumber']].filter(Boolean).join(' '));
   push('車いす', t.wheelchair, formatYesNo);
   push('トイレ', t.amenity === 'toilets' ? 'あり' : t.toilets, formatYesNo);
+  push('インターネット', t.internet_access);
+  push('電源', t.power_supply, formatYesNo);
+  push('座席', t.seating, formatYesNo);
   push('最終調査', t['survey:date']);
-  push('最終更新', feature.timestamp);
-  push('更新年', feature.year ? String(feature.year) : '不明');
   push('座標', `${feature.lat.toFixed(6)}, ${feature.lon.toFixed(6)}`);
   push('メモ', t.note);
   return rows.join('');
@@ -562,6 +595,16 @@ function formatOpeningHours(raw) {
 function formatYesNo(value) {
   const mapValue = { yes: 'あり', no: 'なし', limited: '一部対応' };
   return escapeHtml(mapValue[value] || value);
+}
+
+function formatOsmUser(user) {
+  const encoded = encodeURIComponent(user);
+  return `<a href="https://www.openstreetmap.org/user/${encoded}" target="_blank" rel="noopener">${escapeHtml(user)}</a>`;
+}
+
+function formatChangeset(changeset) {
+  const id = escapeHtml(changeset);
+  return `<a href="https://www.openstreetmap.org/changeset/${id}" target="_blank" rel="noopener">${id}</a>`;
 }
 
 function getCategoryLabel(category) {
@@ -666,6 +709,8 @@ function bindControls() {
   const fromLabel = document.getElementById('dateFromLabel');
   const toLabel = document.getElementById('dateToLabel');
   const showNoDate = document.getElementById('showNoDate');
+  const showChangedUserLabels = document.getElementById('showChangedUserLabels');
+  state.labels.showChangedUser = showChangedUserLabels.checked;
   fromEl.max = currentYear;
   toEl.max = currentYear;
   toEl.value = currentYear;
@@ -694,6 +739,10 @@ function bindControls() {
   toEl.addEventListener('input', syncDateFilter);
   showNoDate.addEventListener('change', () => {
     state.dateFilter.showNoDate = showNoDate.checked;
+    render();
+  });
+  showChangedUserLabels.addEventListener('change', () => {
+    state.labels.showChangedUser = showChangedUserLabels.checked;
     render();
   });
   document.getElementById('changedButton').addEventListener('click', loadChangedData);
