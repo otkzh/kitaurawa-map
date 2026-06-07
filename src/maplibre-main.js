@@ -1,6 +1,6 @@
 const CONFIG = {
-  eventDate: '2026-06-07',
-  eventNoteKeyword: '北浦和居場所マッピングパーティー',
+  changedSinceJstLabel: '2026-06-07 00:00',
+  changedSinceUtc: '2026-06-06T15:00:00Z',
   beforeDataUrl: 'data/before-osm.json',
   bounds: { south: 35.857, west: 139.625, north: 35.888, east: 139.665 },
   center: [139.645, 35.872],
@@ -15,7 +15,7 @@ const CONFIG = {
 };
 
 const COLORS = {
-  after: '#e85d3f',
+  changed: '#facc15',
   food: '#d97706',
   shop: '#0d9488',
   medical: '#dc2626',
@@ -67,13 +67,12 @@ const map = new maplibregl.Map({
   crossSourceCollisions: false,
   localIdeographFontFamily: 'sans-serif'
 });
-window.kitaurawaMap = map;
 
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-left');
 map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
 
 const state = {
-  layers: { before: true, after: true, theme: true },
+  layers: { before: true, changed: true, theme: true },
   basemap: 'openfreemap',
   categories: {
     food: true,
@@ -91,7 +90,7 @@ const state = {
 
 let beforeFeatures = [];
 let beforeSnapshotFeatures = [];
-let afterFeatures = [];
+let changedFeatures = [];
 let selectedFeatureId = null;
 let visibleFeatureMap = new Map();
 let mapHandlersBound = false;
@@ -151,7 +150,7 @@ function addMapSourcesAndLayers() {
       type: 'line',
       source: 'bounds',
       paint: {
-        'line-color': COLORS.after,
+        'line-color': '#e85d3f',
         'line-width': 2,
         'line-dasharray': [2, 2]
       }
@@ -170,14 +169,14 @@ function addMapSourcesAndLayers() {
         'circle-radius': [
           'case',
           ['get', 'selected'], 10,
-          ['get', 'after'], 9,
+          ['get', 'changed'], 10,
           ['get', 'themeVisible'], 8,
           7
         ],
         'circle-color': [
           'case',
           ['get', 'selected'], '#111827',
-          ['get', 'after'], COLORS.after,
+          ['get', 'changed'], COLORS.changed,
           ['get', 'themeVisible'], '#111827',
           ['get', 'color']
         ],
@@ -194,14 +193,14 @@ function addMapSourcesAndLayers() {
         'circle-radius': [
           'case',
           ['get', 'selected'], 7,
-          ['get', 'after'], 6,
+          ['get', 'changed'], 6,
           ['get', 'themeVisible'], 6,
           5
         ],
         'circle-color': ['get', 'color'],
         'circle-opacity': [
           'case',
-          ['get', 'after'], 0.92,
+          ['get', 'changed'], 0.96,
           0.72
         ],
         'circle-stroke-color': '#ffffff',
@@ -303,20 +302,19 @@ function restoreOverlayLayersWhenReady(token, attempt = 0) {
   }
   addMapSourcesAndLayers();
   render();
-  const afterText = afterFeatures.length ? `${afterFeatures.length}件` : '未取得';
-  setStatus(`Before ${beforeFeatures.length}件を表示しています。Afterは${afterText}です。`);
+  const changedText = changedFeatures.length ? `${changedFeatures.length}件` : '未取得';
+  setStatus(`Before ${beforeFeatures.length}件を表示しています。本日変更は${changedText}です。`);
 }
 
-function buildAfterQuery() {
+function buildChangedQuery() {
   const b = CONFIG.bounds;
   const bbox = `${b.south},${b.west},${b.north},${b.east}`;
   return `
-    [out:json][timeout:25];
+    [out:json][timeout:60];
     (
-      node["survey:date"="${CONFIG.eventDate}"](${bbox});
-      way["survey:date"="${CONFIG.eventDate}"](${bbox});
-      node["note"~"${CONFIG.eventNoteKeyword}"](${bbox});
-      way["note"~"${CONFIG.eventNoteKeyword}"](${bbox});
+      node(newer:"${CONFIG.changedSinceUtc}")(${bbox});
+      way(newer:"${CONFIG.changedSinceUtc}")(${bbox});
+      relation(newer:"${CONFIG.changedSinceUtc}")(${bbox});
     );
     out center tags meta;
   `;
@@ -376,7 +374,8 @@ function elementToFeature(element, source) {
     source,
     category: getCategory(tags),
     themeTags: getThemeTags(tags),
-    isAfter: source === 'after',
+    isChanged: source === 'changed',
+    timestamp: element.timestamp || null,
     year: getElementYear(element)
   };
 }
@@ -388,6 +387,10 @@ function dedupeFeatures(features) {
     seen.add(feature.id);
     return true;
   });
+}
+
+function elementHasTags(element) {
+  return Object.keys(element.tags || {}).length > 0;
 }
 
 function getElementYear(element) {
@@ -432,16 +435,22 @@ function render() {
   }
   addMapSourcesAndLayers();
 
-  const combined = [...beforeFeatures, ...afterFeatures];
+  const beforeIds = new Set(beforeFeatures.map(feature => feature.id));
+  const changedIds = new Set(changedFeatures.map(feature => feature.id));
+  const changedOnlyFeatures = changedFeatures.filter(feature => !beforeIds.has(feature.id));
+  const combined = [...beforeFeatures, ...changedOnlyFeatures];
   const visible = [];
   visibleFeatureMap = new Map();
 
   for (const feature of combined) {
     if (!visibleByFilter(feature)) continue;
-    if (feature.isAfter && !state.layers.after) continue;
-    if (!feature.isAfter && !state.layers.before) continue;
-    visible.push(feature);
-    visibleFeatureMap.set(feature.id, feature);
+    const renderedFeature = changedIds.has(feature.id)
+      ? { ...feature, isChanged: true }
+      : feature;
+    if (renderedFeature.isChanged && !state.layers.changed) continue;
+    if (!renderedFeature.isChanged && !state.layers.before) continue;
+    visible.push(renderedFeature);
+    visibleFeatureMap.set(renderedFeature.id, renderedFeature);
   }
 
   const source = map.getSource('pois');
@@ -463,7 +472,7 @@ function featureToGeoJson(feature) {
       name: feature.tags.name || '',
       category: feature.category,
       color: COLORS[feature.category] || COLORS.other,
-      after: feature.isAfter,
+      changed: feature.isChanged,
       selected: selectedFeatureId === feature.id,
       themeVisible: state.layers.theme && feature.themeTags.length > 0,
       labelPriority: getLabelPriority(feature)
@@ -477,7 +486,7 @@ function featureToGeoJson(feature) {
 
 function getLabelPriority(feature) {
   if (selectedFeatureId === feature.id) return 0;
-  if (feature.isAfter) return 1;
+  if (feature.isChanged) return 0.5;
   if (feature.themeTags.length > 0) return 2;
   return 3;
 }
@@ -507,13 +516,14 @@ function buildDetailHtml(feature) {
   const type = tags.amenity || tags.shop || tags.leisure || tags.emergency || tags.highway || tags.railway || tags.public_transport || '地点';
   const osmUrl = `https://www.openstreetmap.org/${feature.id}`;
   const themeHtml = feature.themeTags.map(tag => `<span class="tag theme-tag">${escapeHtml(tag)}</span>`).join('');
-  const stateHtml = feature.isAfter ? '<span class="tag theme-tag">今回の成果</span>' : '<span class="tag">Before</span>';
+  const stateHtml = feature.source === 'before' ? '<span class="tag">Before</span>' : '';
+  const changedHtml = feature.isChanged ? '<span class="tag changed-tag">本日変更</span>' : '';
   const rows = buildInfoRows(feature);
 
   return `
     <div class="detail-title">${escapeHtml(name)}</div>
     <div>${escapeHtml(type)}</div>
-    <div class="tag-list">${stateHtml}${themeHtml}</div>
+    <div class="tag-list">${stateHtml}${changedHtml}${themeHtml}</div>
     ${rows ? `<dl class="detail-meta">${rows}</dl>` : ''}
     <p style="margin:10px 0 0;font-size:12px;"><a href="${osmUrl}" target="_blank" rel="noopener">OSMで開く</a></p>
   `;
@@ -537,6 +547,7 @@ function buildInfoRows(feature) {
   push('車いす', t.wheelchair, formatYesNo);
   push('トイレ', t.amenity === 'toilets' ? 'あり' : t.toilets, formatYesNo);
   push('最終調査', t['survey:date']);
+  push('最終更新', feature.timestamp);
   push('更新年', feature.year ? String(feature.year) : '不明');
   push('座標', `${feature.lat.toFixed(6)}, ${feature.lon.toFixed(6)}`);
   push('メモ', t.note);
@@ -569,8 +580,7 @@ function getCategoryLabel(category) {
 
 function updateStats(visible) {
   document.getElementById('beforeCount').textContent = beforeFeatures.length;
-  document.getElementById('afterCount').textContent = afterFeatures.length;
-  document.getElementById('themeCount').textContent = [...beforeFeatures, ...afterFeatures].filter(f => f.themeTags.length).length;
+  document.getElementById('changedCount').textContent = changedFeatures.length;
   document.getElementById('visibleCount').textContent = visible;
 }
 
@@ -578,27 +588,25 @@ function setStatus(text) {
   document.getElementById('statusText').textContent = text;
 }
 
-async function loadAfterData() {
-  const button = document.getElementById('reloadButton');
+async function loadChangedData() {
+  const button = document.getElementById('changedButton');
   button.disabled = true;
-  button.textContent = 'After取得中...';
-  setStatus('OpenStreetMapからAfterデータを取得しています。');
+  button.textContent = '本日変更を取得中...';
+  setStatus(`日本時間 ${CONFIG.changedSinceJstLabel} 以降の変更をOpenStreetMapから取得しています。`);
   try {
-    const afterJson = await postOverpass(buildAfterQuery()).catch(error => {
+    const changedJson = await postOverpass(buildChangedQuery()).catch(error => {
       console.warn(error);
-      throw new Error('AfterのOverpass取得に失敗しました。Beforeはそのまま表示しています。');
+      throw new Error('本日変更のOverpass取得に失敗しました。表示中のデータはそのままです。');
     });
-    const afterIds = new Set((afterJson.elements || []).map(el => `${el.type}/${el.id}`));
-    beforeFeatures = beforeSnapshotFeatures.filter(feature => !afterIds.has(feature.id));
-    afterFeatures = dedupeFeatures((afterJson.elements || []).map(el => elementToFeature(el, 'after')));
+    changedFeatures = dedupeFeatures((changedJson.elements || []).filter(elementHasTags).map(el => elementToFeature(el, 'changed')));
     render();
-    setStatus(`Before ${beforeFeatures.length}件、After ${afterFeatures.length}件を表示しています。`);
-    button.textContent = 'Afterを再取得';
+    setStatus(`Before ${beforeFeatures.length}件、本日変更 ${changedFeatures.length}件を表示できます。`);
+    button.textContent = '本日変更を再取得';
   } catch (error) {
     console.error(error);
     setStatus(error.message);
     alert(error.message);
-    button.textContent = afterFeatures.length ? 'Afterを再取得' : 'Afterを取得';
+    button.textContent = changedFeatures.length ? '本日変更を再取得' : '本日変更を取得';
   } finally {
     button.disabled = false;
   }
@@ -610,9 +618,9 @@ async function loadBeforeData() {
     const beforeJson = await loadBeforeSnapshot();
     beforeSnapshotFeatures = dedupeFeatures((beforeJson.elements || []).map(el => elementToFeature(el, 'before')));
     beforeFeatures = beforeSnapshotFeatures;
-    afterFeatures = [];
+    changedFeatures = [];
     render();
-    setStatus(`Before ${beforeFeatures.length}件を表示しています。Afterは未取得です。`);
+    setStatus(`Before ${beforeFeatures.length}件を表示しています。本日変更は未取得です。`);
   } catch (error) {
     console.error(error);
     setStatus(error.message);
@@ -688,5 +696,5 @@ function bindControls() {
     state.dateFilter.showNoDate = showNoDate.checked;
     render();
   });
-  document.getElementById('reloadButton').addEventListener('click', loadAfterData);
+  document.getElementById('changedButton').addEventListener('click', loadChangedData);
 }

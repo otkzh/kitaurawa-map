@@ -7,6 +7,7 @@
   --accent: #e85d3f;
   --before: #8e99aa;
   --after: #e85d3f;
+  --changed: #facc15;
   --food: #d97706;
   --shop: #0d9488;
   --medical: #dc2626;
@@ -261,6 +262,11 @@ input[type="range"] {
   border-color: var(--after);
   box-shadow: 0 0 0 2px var(--after);
 }
+.swatch.changed {
+  background: #fffbe6;
+  border-color: var(--changed);
+  box-shadow: 0 0 0 2px var(--changed);
+}
 .swatch.food { background: var(--food); }
 .swatch.shop { background: var(--shop); }
 .swatch.medical { background: var(--medical); }
@@ -301,6 +307,12 @@ input[type="range"] {
 .theme-tag {
   background: #fff0ea;
   color: #b8321f;
+  font-weight: 800;
+}
+
+.changed-tag {
+  background: #fff7c2;
+  color: #854d0e;
   font-weight: 800;
 }
 

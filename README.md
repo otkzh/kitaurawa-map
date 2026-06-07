@@ -2,14 +2,15 @@
 
 2026年6月7日の「北浦和西口 まちの居場所マップづくり」成果発表用Webアプリです。
 
-Leafletで地図を表示し、OpenStreetMap / Overpass APIから取得した生活に関わる施設をBefore / Afterで比較します。
+Leaflet版ではOpenStreetMap / Overpass APIから取得した生活に関わる施設をBefore / Afterで比較します。MapLibre版では保存済みBeforeを起点に、本日変更された地物を必要なときだけ取得して強調します。
 
 ## 方針
 
 - Beforeは、現時点でOverpass APIから取得して保存した `data/before-osm.json` を参照します。
 - 初期表示ではBefore JSONだけを読み込み、Overpass APIにはアクセスしません。
-- Afterは、画面下部の「Afterを取得」ボタンを押したときだけOverpass APIから取得します。
-- After判定は `survey:date=2026-06-07` または `note=北浦和居場所マッピングパーティー` を含む地点です。
+- Leaflet版のAfterは、画面下部の「Afterを取得」ボタンを押したときだけOverpass APIから取得します。
+- Leaflet版のAfter判定は `survey:date=2026-06-07` または `note=北浦和居場所マッピングパーティー` を含む地点です。
+- MapLibre版ではAfter表示を使わず、「本日変更を取得」ボタンで日本時間 `2026-06-07 00:00` 以降に変更された範囲内の地物をOverpass APIから取得し、黄色い外枠で強調します。
 - ビルド不要の静的Webアプリとして、ローカルHTTPサーバーで動かします。
 
 ## 保存済みBeforeデータ
@@ -37,7 +38,7 @@ MapLibre版は以下を開きます。Before JSONなどのデータはLeaflet版
 http://localhost:8000/maplibre.html
 ```
 
-MapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。
+MapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。また、範囲内の当日変更地物を必要なときだけOverpass APIから取得して強調できます。
 
 ## Beforeデータの更新
 
@@ -81,4 +82,4 @@ curl -L --max-time 120 -o data/before-osm.json --data-urlencode data@scripts/bef
 
 ## 注意
 
-地図タイルとLeaflet CDNにはインターネット接続が必要です。After取得用Overpass APIへのアクセスは、画面下部の「Afterを取得」ボタンを押した後だけ発生します。
+地図タイルとCDNにはインターネット接続が必要です。Leaflet版のAfter取得用Overpass APIへのアクセスは「Afterを取得」ボタン、MapLibre版の本日変更取得用Overpass APIへのアクセスは「本日変更を取得」ボタンを押した後だけ発生します。

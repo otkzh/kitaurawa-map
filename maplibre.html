@@ -15,7 +15,7 @@
       <header class="app-header">
         <p class="eyebrow">MapLibre版 / 2026/6/7 成果発表用</p>
         <h1>北浦和西口<br>まちの居場所マップ</h1>
-        <p class="subtitle">共通のBefore JSONをMapLibre GL JSで表示します。Afterデータは必要なときだけ取得します。</p>
+        <p class="subtitle">共通のBefore JSONをMapLibre GL JSで表示します。本日変更データは必要なときだけ取得します。</p>
       </header>
 
       <p id="statusText" class="status">起動中...</p>
@@ -23,7 +23,7 @@
       <section class="section">
         <h2>表示</h2>
         <label><input type="checkbox" data-layer="before" checked> Before: 保存済みOSM</label>
-        <label><input type="checkbox" data-layer="after" checked> After: 当日の成果</label>
+        <label><input type="checkbox" data-layer="changed" checked> 本日変更</label>
         <label><input type="checkbox" data-layer="theme" checked> 注目タグ強調</label>
       </section>
 
@@ -66,15 +66,14 @@
         <h2>集計</h2>
         <div class="stats">
           <div class="stat"><b id="beforeCount">0</b><span>Before</span></div>
-          <div class="stat"><b id="afterCount">0</b><span>After</span></div>
-          <div class="stat"><b id="themeCount">0</b><span>注目タグ</span></div>
+          <div class="stat"><b id="changedCount">0</b><span>本日変更</span></div>
           <div class="stat"><b id="visibleCount">0</b><span>表示中</span></div>
         </div>
       </section>
 
       <section class="section">
         <h2>凡例</h2>
-        <div class="legend-item"><span class="swatch after"></span>今回追加・更新は赤い外枠</div>
+        <div class="legend-item"><span class="swatch changed"></span>本日変更は黄色い外枠</div>
         <div class="legend-item"><span class="swatch food"></span>飲食・休憩</div>
         <div class="legend-item"><span class="swatch shop"></span>買い物・サービス</div>
         <div class="legend-item"><span class="swatch medical"></span>医療・薬局</div>
@@ -86,9 +85,9 @@
       </section>
 
       <section class="section sync-section">
-        <h2>Afterデータ</h2>
-        <p class="note">発表中に最新の成果を確認するときだけ、OpenStreetMapへ問い合わせます。</p>
-        <button id="reloadButton" class="secondary-button" type="button">Afterを取得</button>
+        <h2>本日変更</h2>
+        <p class="note">日本時間 2026-06-07 00:00 以降に変更された範囲内の地物を取得して強調します。</p>
+        <button id="changedButton" class="secondary-button" type="button">本日変更を取得</button>
       </section>
     </aside>
 
