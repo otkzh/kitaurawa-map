@@ -2,15 +2,15 @@
 
 2026年6月7日の「北浦和西口 まちの居場所マップづくり」成果発表用Webアプリです。
 
-Leaflet版ではOpenStreetMap / Overpass APIから取得した生活に関わる施設をBefore / Afterで比較します。MapLibre版では保存済みBeforeを起点に、本日変更された地物を必要なときだけ取得して強調します。
+MapLibre版とLeaflet版で、保存済みBeforeを起点に本日変更された地物を強調表示します。
 
 ## 方針
 
 - Beforeは、現時点でOverpass APIから取得して保存した `data/before-osm.json` を参照します。
 - 初期表示では保存済みJSONだけを読み込み、Overpass APIにはアクセスしません。
-- Leaflet版のAfterは、画面下部の「Afterを取得」ボタンを押したときだけOverpass APIから取得します。
-- Leaflet版のAfter判定は `survey:date=2026-06-07` または `note=北浦和居場所マッピングパーティー` を含む地点です。
-- MapLibre版ではAfter表示を使わず、初回は `data/changed-osm.json` の本日変更を表示します。「本日変更を再取得」ボタンで日本時間 `2026-06-07 00:00` 以降に変更された範囲内の地物をOverpass APIから取り直し、黄色い外枠で強調します。
+- 両方の版でAfter表示を使わず、初回は `data/changed-osm.json` の本日変更を表示します。
+- 日本時間 `2026-06-07 00:00` 以降に変更された範囲内の地物を黄色い外枠で強調します。
+- JSON更新ボタンは一時停止中のため、画面からOverpass APIへの再取得はできません。
 - ビルド不要の静的Webアプリとして、ローカルHTTPサーバーで動かします。
 
 ## 保存済みBeforeデータ
@@ -48,7 +48,13 @@ Leaflet版は補助版として以下から開けます。
 http://localhost:8000/leaflet.html
 ```
 
-メインのMapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。また、範囲内の当日変更地物を必要なときだけOverpass APIから取得して強調でき、本日変更ラベルには必要に応じてOSMユーザ名も表示できます。
+OSMを知らない人向けの簡易版は以下から開けます。
+
+```text
+http://localhost:8000/simple.html
+```
+
+メインのMapLibre版では、OpenFreeMapのベクタータイル、OpenStreetMap、地理院地図標準、地理院航空写真を切り替えられます。両方の版で本日変更地物を強調でき、本日変更ラベルには必要に応じてOSMユーザ名も表示できます。
 
 ## Beforeデータの更新
 
@@ -74,9 +80,12 @@ curl -L --max-time 120 -o data/changed-osm.json --data-urlencode data@scripts/ch
 
 - `index.html`: MapLibre版アプリ本体のHTML
 - `leaflet.html`: Leaflet版アプリのHTML
+- `simple.html`: OSMを知らない人向けの簡易版HTML
 - `src/styles.css`: 画面スタイル
+- `src/simple.css`: 簡易版の画面スタイル
 - `src/main.js`: Leaflet描画、フィルター、Overpass取得処理
 - `src/maplibre-main.js`: MapLibre描画、フィルター、Overpass取得処理
+- `src/simple.js`: 簡易版の描画処理
 - `data/before-osm.json`: Beforeとして使う保存済みOSM JSON
 - `data/changed-osm.json`: 本日変更として使う保存済みOSM JSON
 - `scripts/before-overpass.query`: Before取得用Overpass QL
@@ -102,4 +111,4 @@ curl -L --max-time 120 -o data/changed-osm.json --data-urlencode data@scripts/ch
 
 ## 注意
 
-地図タイルとCDNにはインターネット接続が必要です。Leaflet版のAfter取得用Overpass APIへのアクセスは「Afterを取得」ボタン、MapLibre版の本日変更取得用Overpass APIへのアクセスは「本日変更を再取得」ボタンを押した後だけ発生します。
+地図タイルとCDNにはインターネット接続が必要です。初期表示では保存済みJSONだけを読み込み、Overpass APIにはアクセスしません。JSON更新ボタンは一時停止中です。

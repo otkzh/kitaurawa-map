@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>北浦和西口 まちの居場所マップ 簡易版</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="src/simple.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="src/simple.js?v=20260616" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="story-header">
+      <p class="eyebrow">北浦和西口 まちの居場所マップづくり</p>
+      <h1>まちの地図に、今日ふえたもの</h1>
+      <p class="lead">イベント前から地図にあった場所と、マッピングパーティ当日に書き足された場所を、はじめての人にもわかりやすく見られるページです。</p>
+    </header>
+
+    <main class="story-layout">
+      <section class="map-stage" aria-label="北浦和西口周辺の簡易地図">
+        <div class="map-toolbar" aria-label="表示切り替え">
+          <button class="mode-button active" type="button" data-mode="story">当日を強調</button>
+          <button class="mode-button" type="button" data-mode="changed">当日だけ</button>
+          <button class="mode-button" type="button" data-mode="before">前からあるもの</button>
+        </div>
+        <div id="simpleMap"></div>
+      </section>
+
+      <aside class="story-panel">
+        <section class="section-block summary-block">
+          <h2>この地図で見ること</h2>
+          <p id="modeSummary">黄色い点が、当日に書き足されたり直されたりした地物です。薄い点はイベント前から地図にあったPOIです。</p>
+        </section>
+
+        <section class="section-block">
+          <h2>ひと目でわかる数字</h2>
+          <div class="stat-grid">
+            <div class="stat-card before">
+              <b id="beforeCount">0</b>
+              <span>イベント前からあるPOI</span>
+            </div>
+            <div class="stat-card changed">
+              <b id="changedCount">0</b>
+              <span>当日書かれた・直された地物</span>
+            </div>
+            <div class="stat-card people">
+              <b id="userCount">0</b>
+              <span>編集に関わったOSMユーザ</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <h2>当日多かったもの</h2>
+          <div id="categoryCards" class="category-cards"></div>
+        </section>
+
+        <section class="section-block">
+          <h2>当日の例</h2>
+          <div id="changedList" class="changed-list"></div>
+        </section>
+
+        <section class="section-block detail-block">
+          <h2 id="detailTitle">地図上の点を選択</h2>
+          <div id="detailBody" class="detail-empty">点をクリックすると、場所の名前や書いた人がここに出ます。</div>
+        </section>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

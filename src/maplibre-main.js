@@ -674,7 +674,9 @@ async function loadBeforeData() {
     changedFeatures = dedupeFeatures((changedJson.elements || []).filter(elementHasTags).map(el => elementToFeature(el, 'changed')));
     render();
     setStatus(`Before ${beforeFeatures.length}件、保存済み本日変更 ${changedFeatures.length}件を表示しています。`);
-    document.getElementById('changedButton').textContent = '本日変更を再取得';
+    const button = document.getElementById('changedButton');
+    button.disabled = true;
+    button.textContent = '本日変更の再取得は一時停止中';
   } catch (error) {
     console.error(error);
     setStatus(error.message);
@@ -756,5 +758,7 @@ function bindControls() {
     state.labels.showChangedUser = showChangedUserLabels.checked;
     render();
   });
-  document.getElementById('changedButton').addEventListener('click', loadChangedData);
+  const changedButton = document.getElementById('changedButton');
+  changedButton.disabled = true;
+  changedButton.textContent = '本日変更の再取得は一時停止中';
 }

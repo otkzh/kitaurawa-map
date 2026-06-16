@@ -1,7 +1,8 @@
 const CONFIG = {
-  eventDate: '2026-06-07',
-  eventNoteKeyword: '北浦和居場所マッピングパーティー',
+  changedSinceJstLabel: '2026-06-07 00:00',
+  changedSinceUtc: '2026-06-06T15:00:00Z',
   beforeDataUrl: 'data/before-osm.json',
+  changedDataUrl: 'data/changed-osm.json',
   bounds: { south: 35.857, west: 139.625, north: 35.888, east: 139.665 },
   center: [35.872, 139.645],
   zoom: 15,
@@ -16,7 +17,7 @@ const CONFIG = {
 
 const COLORS = {
   before: '#8e99aa',
-  after: '#e85d3f',
+  changed: '#facc15',
   food: '#d97706',
   shop: '#0d9488',
   medical: '#dc2626',
@@ -67,11 +68,11 @@ L.rectangle(
 
 const layers = {
   before: L.layerGroup().addTo(map),
-  after: L.layerGroup().addTo(map)
+  changed: L.layerGroup().addTo(map)
 };
 
 const state = {
-  layers: { before: true, after: true, theme: true },
+  layers: { before: true, changed: true, theme: true },
   categories: {
     food: true,
     shop: true,
@@ -83,24 +84,24 @@ const state = {
     mobility: true,
     other: true
   },
+  labels: { showChangedUser: false },
   dateFilter: { from: 2010, to: new Date().getFullYear(), showNoDate: true }
 };
 
 let beforeFeatures = [];
 let beforeSnapshotFeatures = [];
-let afterFeatures = [];
+let changedFeatures = [];
 let selectedFeatureId = null;
 
-function buildAfterQuery() {
+function buildChangedQuery() {
   const b = CONFIG.bounds;
   const bbox = `${b.south},${b.west},${b.north},${b.east}`;
   return `
-    [out:json][timeout:25];
+    [out:json][timeout:60];
     (
-      node["survey:date"="${CONFIG.eventDate}"](${bbox});
-      way["survey:date"="${CONFIG.eventDate}"](${bbox});
-      node["note"~"${CONFIG.eventNoteKeyword}"](${bbox});
-      way["note"~"${CONFIG.eventNoteKeyword}"](${bbox});
+      node(newer:"${CONFIG.changedSinceUtc}")(${bbox});
+      way(newer:"${CONFIG.changedSinceUtc}")(${bbox});
+      relation(newer:"${CONFIG.changedSinceUtc}")(${bbox});
     );
     out center tags meta;
   `;
@@ -147,6 +148,12 @@ async function loadBeforeSnapshot() {
   return response.json();
 }
 
+async function loadChangedSnapshot() {
+  const response = await fetch(CONFIG.changedDataUrl, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`本日変更JSONを読み込めません: ${response.status}`);
+  return response.json();
+}
+
 function elementToFeature(element, source) {
   const tags = element.tags || {};
   const lat = element.lat ?? element.center?.lat;
@@ -158,9 +165,16 @@ function elementToFeature(element, source) {
     lon,
     tags,
     source,
+    osmType: element.type,
+    osmId: element.id,
     category: getCategory(tags),
     themeTags: getThemeTags(tags),
-    isAfter: source === 'after',
+    isChanged: source === 'changed',
+    timestamp: element.timestamp || null,
+    version: element.version || null,
+    changeset: element.changeset || null,
+    user: element.user || null,
+    uid: element.uid || null,
     year: getElementYear(element)
   };
 }
@@ -172,6 +186,10 @@ function dedupeFeatures(features) {
     seen.add(feature.id);
     return true;
   });
+}
+
+function elementHasTags(element) {
+  return Object.keys(element.tags || {}).length > 0;
 }
 
 function getElementYear(element) {
@@ -212,13 +230,20 @@ function render() {
   clearLayers();
   let visible = 0;
   const placedLabels = [];
-  const combined = [...beforeFeatures, ...afterFeatures];
+  const beforeIds = new Set(beforeFeatures.map(feature => feature.id));
+  const changedFeatureById = new Map(changedFeatures.map(feature => [feature.id, feature]));
+  const changedOnlyFeatures = changedFeatures.filter(feature => !beforeIds.has(feature.id));
+  const combined = [...beforeFeatures, ...changedOnlyFeatures];
 
   for (const feature of combined) {
     if (!visibleByFilter(feature)) continue;
-    const targetLayer = feature.isAfter ? 'after' : 'before';
+    const changedFeature = changedFeatureById.get(feature.id);
+    const renderedFeature = changedFeature
+      ? { ...feature, ...changedFeature, isChanged: true }
+      : feature;
+    const targetLayer = renderedFeature.isChanged ? 'changed' : 'before';
     if (state.layers[targetLayer]) {
-      makeMarker(feature, targetLayer, canPlaceLabel(feature, placedLabels)).addTo(layers[targetLayer]);
+      makeMarker(renderedFeature, targetLayer, canPlaceLabel(renderedFeature, placedLabels)).addTo(layers[targetLayer]);
       visible++;
     }
   }
@@ -231,12 +256,12 @@ function makeMarker(feature, mode, showLabel) {
   const isTheme = state.layers.theme && feature.themeTags.length > 0;
   const isSelected = selectedFeatureId === feature.id;
   const marker = L.circleMarker([feature.lat, feature.lon], {
-    radius: isSelected ? 11 : feature.isAfter ? 10 : isTheme ? 8 : 7,
-    color: isSelected ? '#111827' : feature.isAfter ? COLORS.after : isTheme ? '#111827' : color,
+    radius: isSelected ? 11 : feature.isChanged ? 10 : isTheme ? 8 : 7,
+    color: isSelected ? '#111827' : feature.isChanged ? COLORS.changed : isTheme ? '#111827' : color,
     fillColor: color,
-    fillOpacity: mode === 'before' ? .68 : .9,
+    fillOpacity: mode === 'before' ? .68 : .92,
     opacity: .96,
-    weight: isSelected ? 4 : feature.isAfter ? 4 : isTheme ? 2 : 1
+    weight: isSelected ? 4 : feature.isChanged ? 4 : isTheme ? 2 : 1
   });
 
   marker.on('click', () => {
@@ -245,8 +270,9 @@ function makeMarker(feature, mode, showLabel) {
     render();
   });
 
-  if (showLabel && feature.tags.name) {
-    marker.bindTooltip(escapeHtml(feature.tags.name), {
+  const labelText = getLabelText(feature);
+  if (showLabel && labelText) {
+    marker.bindTooltip(escapeHtml(labelText).replaceAll('\n', '<br>'), {
       permanent: true,
       direction: 'right',
       offset: getLabelOffset(feature),
@@ -277,13 +303,14 @@ function buildDetailHtml(feature) {
   const type = tags.amenity || tags.shop || tags.leisure || tags.emergency || tags.highway || tags.railway || tags.public_transport || '地点';
   const osmUrl = `https://www.openstreetmap.org/${feature.id}`;
   const themeHtml = feature.themeTags.map(tag => `<span class="tag theme-tag">${escapeHtml(tag)}</span>`).join('');
-  const stateHtml = feature.isAfter ? '<span class="tag theme-tag">今回の成果</span>' : '<span class="tag">Before</span>';
+  const stateHtml = feature.source === 'before' ? '<span class="tag">Before</span>' : '';
+  const changedHtml = feature.isChanged ? '<span class="tag changed-tag">本日変更</span>' : '';
   const rows = buildInfoRows(feature);
 
   return `
-    <div class="popup-title">${escapeHtml(name)}</div>
+    <div class="detail-title">${escapeHtml(name)}</div>
     <div>${escapeHtml(type)}</div>
-    <div class="tag-list">${stateHtml}${themeHtml}</div>
+    <div class="tag-list">${stateHtml}${changedHtml}${themeHtml}</div>
     ${rows ? `<dl class="detail-meta">${rows}</dl>` : ''}
     <p style="margin:10px 0 0;font-size:12px;"><a href="${osmUrl}" target="_blank" rel="noopener">OSMで開く</a></p>
   `;
@@ -300,14 +327,26 @@ function buildInfoRows(feature) {
   push('カテゴリ', getCategoryLabel(feature.category));
   push('分類タグ', t.amenity || t.shop || t.leisure || t.emergency || t.highway || t.railway || t.public_transport);
   push('業種', t.cuisine || t.healthcare || t.social_facility || t.shop);
+  push('OSM種別', feature.osmType);
+  push('OSM ID', feature.osmId ? String(feature.osmId) : '');
+  push('OSMユーザ名', feature.user, formatOsmUser);
+  push('OSM UID', feature.uid ? String(feature.uid) : '');
+  push('バージョン', feature.version ? String(feature.version) : '');
+  push('変更セット', feature.changeset ? String(feature.changeset) : '', formatChangeset);
+  push('最終更新', feature.timestamp);
+  push('更新年', feature.year ? String(feature.year) : '不明');
   push('営業時間', t.opening_hours, formatOpeningHours);
   push('電話番号', t.phone || t['contact:phone']);
   push('Web', t.website || t['contact:website']);
+  push('ブランド', t.brand || t.operator);
+  push('公式名', t.official_name || t.alt_name);
   push('住所', t['addr:full'] || [t['addr:city'], t['addr:suburb'], t['addr:street'], t['addr:housenumber']].filter(Boolean).join(' '));
   push('車いす', t.wheelchair, formatYesNo);
   push('トイレ', t.amenity === 'toilets' ? 'あり' : t.toilets, formatYesNo);
+  push('インターネット', t.internet_access);
+  push('電源', t.power_supply, formatYesNo);
+  push('座席', t.seating, formatYesNo);
   push('最終調査', t['survey:date']);
-  push('更新年', feature.year ? String(feature.year) : '不明');
   push('座標', `${feature.lat.toFixed(6)}, ${feature.lon.toFixed(6)}`);
   push('メモ', t.note);
   return rows.join('');
@@ -321,6 +360,16 @@ function formatOpeningHours(raw) {
 function formatYesNo(value) {
   const mapValue = { yes: 'あり', no: 'なし', limited: '一部対応' };
   return escapeHtml(mapValue[value] || value);
+}
+
+function formatOsmUser(user) {
+  const encoded = encodeURIComponent(user);
+  return `<a href="https://www.openstreetmap.org/user/${encoded}" target="_blank" rel="noopener">${escapeHtml(user)}</a>`;
+}
+
+function formatChangeset(changeset) {
+  const id = escapeHtml(changeset);
+  return `<a href="https://www.openstreetmap.org/changeset/${id}" target="_blank" rel="noopener">${id}</a>`;
 }
 
 function getCategoryLabel(category) {
@@ -338,7 +387,7 @@ function getCategoryLabel(category) {
 }
 
 function canPlaceLabel(feature, placedLabels) {
-  if (map.getZoom() < 16 || !feature.tags.name) return false;
+  if (map.getZoom() < 16 || !getLabelText(feature)) return false;
   const [dx, dy] = getLabelOffset(feature);
   const point = map.latLngToContainerPoint([feature.lat, feature.lon]);
   const candidate = { x: point.x + dx, y: point.y + dy };
@@ -355,10 +404,17 @@ function getLabelOffset(feature) {
   return [12 + (hash % 14), ((hash >> 4) % 15) - 7];
 }
 
+function getLabelText(feature) {
+  const name = feature.tags.name || '';
+  if (feature.isChanged && state.labels.showChangedUser && feature.user) {
+    return [name, `@${feature.user}`].filter(Boolean).join('\n');
+  }
+  return name;
+}
+
 function updateStats(visible) {
   document.getElementById('beforeCount').textContent = beforeFeatures.length;
-  document.getElementById('afterCount').textContent = afterFeatures.length;
-  document.getElementById('themeCount').textContent = [...beforeFeatures, ...afterFeatures].filter(f => f.themeTags.length).length;
+  document.getElementById('changedCount').textContent = changedFeatures.length;
   document.getElementById('visibleCount').textContent = visible;
 }
 
@@ -366,45 +422,49 @@ function setStatus(text) {
   document.getElementById('statusText').textContent = text;
 }
 
-async function loadAfterData() {
-  const button = document.getElementById('reloadButton');
+async function loadChangedData() {
+  const button = document.getElementById('changedButton');
   button.disabled = true;
-  button.textContent = 'After取得中...';
-  setStatus('OpenStreetMapからAfterデータを取得しています。');
+  button.textContent = '本日変更を取得中...';
+  setStatus(`日本時間 ${CONFIG.changedSinceJstLabel} 以降の変更をOpenStreetMapから取得しています。`);
   try {
-    const afterJson = await postOverpass(buildAfterQuery()).catch(error => {
+    const changedJson = await postOverpass(buildChangedQuery()).catch(error => {
       console.warn(error);
-      throw new Error('AfterのOverpass取得に失敗しました。Beforeはそのまま表示しています。');
+      throw new Error('本日変更のOverpass取得に失敗しました。表示中のデータはそのままです。');
     });
-    const afterIds = new Set((afterJson.elements || []).map(el => `${el.type}/${el.id}`));
-    beforeFeatures = beforeSnapshotFeatures.filter(feature => !afterIds.has(feature.id));
-    afterFeatures = dedupeFeatures((afterJson.elements || []).map(el => elementToFeature(el, 'after')));
+    changedFeatures = dedupeFeatures((changedJson.elements || []).filter(elementHasTags).map(el => elementToFeature(el, 'changed')));
     render();
-    setStatus(`Before ${beforeFeatures.length}件、After ${afterFeatures.length}件を表示しています。`);
-    button.textContent = 'Afterを再取得';
+    setStatus(`Before ${beforeFeatures.length}件、本日変更 ${changedFeatures.length}件を表示できます。`);
+    button.textContent = '本日変更を再取得';
   } catch (error) {
     console.error(error);
     setStatus(error.message);
     alert(error.message);
-    button.textContent = afterFeatures.length ? 'Afterを再取得' : 'Afterを取得';
+    button.textContent = changedFeatures.length ? '本日変更を再取得' : '本日変更を取得';
   } finally {
     button.disabled = false;
   }
 }
 
 async function loadBeforeData() {
-  setStatus('保存済みBeforeデータを読み込んでいます。');
+  setStatus('保存済みBeforeデータと本日変更データを読み込んでいます。');
   try {
-    const beforeJson = await loadBeforeSnapshot();
+    const [beforeJson, changedJson] = await Promise.all([
+      loadBeforeSnapshot(),
+      loadChangedSnapshot()
+    ]);
     beforeSnapshotFeatures = dedupeFeatures((beforeJson.elements || []).map(el => elementToFeature(el, 'before')));
     beforeFeatures = beforeSnapshotFeatures;
-    afterFeatures = [];
+    changedFeatures = dedupeFeatures((changedJson.elements || []).filter(elementHasTags).map(el => elementToFeature(el, 'changed')));
     render();
-    setStatus(`Before ${beforeFeatures.length}件を表示しています。Afterは未取得です。`);
+    setStatus(`Before ${beforeFeatures.length}件、保存済み本日変更 ${changedFeatures.length}件を表示しています。`);
+    const button = document.getElementById('changedButton');
+    button.disabled = true;
+    button.textContent = '本日変更の再取得は一時停止中';
   } catch (error) {
     console.error(error);
     setStatus(error.message);
-    alert(`Beforeデータの読み込みに失敗しました。\n${error.message}`);
+    alert(`保存済みデータの読み込みに失敗しました。\n${error.message}`);
   }
 }
 
@@ -437,6 +497,8 @@ function bindControls() {
   const fromLabel = document.getElementById('dateFromLabel');
   const toLabel = document.getElementById('dateToLabel');
   const showNoDate = document.getElementById('showNoDate');
+  const showChangedUserLabels = document.getElementById('showChangedUserLabels');
+  state.labels.showChangedUser = showChangedUserLabels.checked;
   fromEl.max = currentYear;
   toEl.max = currentYear;
   toEl.value = currentYear;
@@ -467,7 +529,13 @@ function bindControls() {
     state.dateFilter.showNoDate = showNoDate.checked;
     render();
   });
-  document.getElementById('reloadButton').addEventListener('click', loadAfterData);
+  showChangedUserLabels.addEventListener('change', () => {
+    state.labels.showChangedUser = showChangedUserLabels.checked;
+    render();
+  });
+  const changedButton = document.getElementById('changedButton');
+  changedButton.disabled = true;
+  changedButton.textContent = '本日変更の再取得は一時停止中';
   map.on('zoomend moveend', render);
 }
 
